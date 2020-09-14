@@ -1,4 +1,4 @@
-fuga-v2-dev-dir
+fuga-v2-cards
 ==============================================================================
 
 [Short description of the addon.]
@@ -16,7 +16,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install fuga-v2-dev-dir
+ember install fuga-v2-cards
 ```
 
 

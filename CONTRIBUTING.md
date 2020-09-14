@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd fuga-v2-dev-dir`
+* `cd fuga-v2-cards`
 * `yarn install`
 
 ## Linting
