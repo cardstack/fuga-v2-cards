@@ -12,7 +12,8 @@
           "copyright",
           "releaseDate",
           "recordingDate",
-          "copyrightDate"
+          "copyrightDate",
+          "musicalWork"
         ]
       },
       "csFields": {
@@ -95,13 +96,29 @@
               }
             }
           }
+        },
+        "musicalWork": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {},
+            "csTitle": "Musical Work",
+            "csId": "musicalWork"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "type": "cards",
+                "id": "https://base.cardstack.com/public/cards/base"
+              }
+            }
+          }
         }
       },
       "csId": "master-recording",
       "csTitle": "Test",
       "csUpdated": "2020-08-03T15:38:43.282Z"
     },
-    "id": "http://localhost:3000/api/realms/default/cards/67112e153de29649d134b58d69af7410e9075cd5",
+    "id": "http://localhost:3000/api/realms/default/cards/master-recording",
     "meta": {
       "cardDir": "/Users/alex/cardstack/fuga-v2-dev-dir/cards/67112e153de29649d134b58d69af7410e9075cd5"
     },
