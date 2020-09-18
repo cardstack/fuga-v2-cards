@@ -1,44 +1,45 @@
 {
   "data": {
     "attributes": {
-      "copyright": "© 2019 Warner Chappell Music, © 2019 Allegro Music Publishing",
-      "csCreated": "2020-08-03T15:38:30.625Z",
+      "csCreated": "2020-09-18T16:28:08.752Z",
       "csFeatures": {
         "isolated-css": "isolated.css"
       },
       "csFieldOrder": [
         "title",
-        "writers",
-        "iswc",
-        "verifi-id",
-        "version-type",
-        "publishers",
-        "copyright"
+        "img-url",
+        "ipi",
+        "pro",
+        "email",
+        "role",
+        "website"
       ],
       "csFieldSets": {
         "embedded": [
-          "iswc",
+          "ipi",
+          "pro",
+          "email",
           "title",
-          "writers",
-          "verifi-id"
+          "img-url",
+          "website"
         ],
         "isolated": [
-          "iswc",
+          "ipi",
+          "pro",
+          "email",
           "title",
-          "writers",
-          "copyright",
-          "verifi-id",
-          "publishers",
-          "version-type"
+          "img-url",
+          "website",
+          "role"
         ]
       },
       "csFields": {
-        "copyright": {
+        "email": {
           "attributes": {
             "csFieldArity": "singular",
             "csFields": {
             },
-            "csTitle": "Copyright Notice"
+            "csTitle": "Email"
           },
           "relationships": {
             "csAdoptsFrom": {
@@ -49,12 +50,28 @@
             }
           }
         },
-        "iswc": {
+        "img-url": {
           "attributes": {
             "csFieldArity": "singular",
             "csFields": {
             },
-            "csTitle": "ISWC"
+            "csTitle": "Image URL"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/image-reference-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "ipi": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "CAE/IPI #"
           },
           "relationships": {
             "csAdoptsFrom": {
@@ -65,12 +82,12 @@
             }
           }
         },
-        "ownership-splits": {
+        "pro": {
           "attributes": {
             "csFieldArity": "singular",
             "csFields": {
             },
-            "csTitle": "Ownership Splits"
+            "csTitle": "PRO"
           },
           "relationships": {
             "csAdoptsFrom": {
@@ -81,28 +98,12 @@
             }
           }
         },
-        "publishers": {
+        "role": {
           "attributes": {
             "csFieldArity": "singular",
             "csFields": {
             },
-            "csTitle": "Publishers"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "source": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "Source"
+            "csTitle": "Role"
           },
           "relationships": {
             "csAdoptsFrom": {
@@ -129,68 +130,37 @@
             }
           }
         },
-        "verifi-id": {
+        "website": {
           "attributes": {
             "csFieldArity": "singular",
             "csFields": {
             },
-            "csTitle": "Verifi ID"
+            "csTitle": "Website"
           },
           "relationships": {
             "csAdoptsFrom": {
               "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "version-type": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "Version Type"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "writers": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "Writers"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
+                "id": "https://base.cardstack.com/public/cards/url-field",
                 "type": "cards"
               }
             }
           }
         }
       },
-      "csId": "musical-work",
-      "csTitle": "Musical Work",
-      "csUpdated": "2020-09-18T17:04:16.956Z",
-      "iswc": "T-070237182-9",
-      "publishers": "Allegro Music Publishing, Warner Chappell Music",
-      "title": "The Sun Comes Out",
-      "verifi-id": "0xab5332b7a35d6ca5d8bd3781fb7c28071341127dc2f1b6928c38e2809e89179ce",
-      "version-type": "Original Work",
-      "writers": "Valentino Solano, Emilio Rosso, Maria Bianchi"
+      "csId": "participant",
+      "csTitle": "participant",
+      "csUpdated": "2020-09-18T17:16:04.611Z",
+      "email": "valentino@valsolanomusic.com",
+      "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/thumb/Valentino-Solano-233dfd189eae633af2d17e8e7934dacc.jpg",
+      "ipi": "00914256714",
+      "pro": "Global Music Rights",
+      "role": "Lyricist",
+      "title": "Valentino Solano",
+      "website": "http://www.valsolanomusic.com/"
     },
-    "id": "http://localhost:3000/api/realms/default/cards/musical-work",
+    "id": "http://localhost:3000/api/realms/default/cards/participant",
     "meta": {
-      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/musical-work"
+      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/participant"
     },
     "relationships": {
       "csAdoptsFrom": {
@@ -205,7 +175,7 @@
   "included": [
     {
       "attributes": {
-        "csCreated": "2020-09-18T17:04:17.029Z",
+        "csCreated": "2020-09-18T17:16:04.679Z",
         "csDescription": "This represents cards of any type",
         "csFeatures": {
           "embedded-css": "embedded.css",
@@ -222,7 +192,7 @@
           "@cardstack/hub": "*"
         },
         "csTitle": "Base Card",
-        "csUpdated": "2020-09-18T17:04:17.029Z"
+        "csUpdated": "2020-09-18T17:16:04.679Z"
       },
       "id": "https://base.cardstack.com/public/cards/base",
       "meta": {

@@ -34,6 +34,9 @@
       ],
       "csFieldSets": {
         "embedded": [
+          "title",
+          "artist",
+          "cover-art"
         ],
         "isolated": [
           "isrc",
@@ -47,7 +50,6 @@
           "copyright",
           "cover-art",
           "verifi-id",
-          "truncated-verifi-id",
           "catalog-no",
           "release-date",
           "recording-date",
@@ -55,7 +57,8 @@
           "background-singer",
           "parental-advisory",
           "mastering-engineer",
-          "recording-engineer"
+          "recording-engineer",
+          "truncated-verifi-id"
         ]
       },
       "csFields": {
@@ -382,7 +385,7 @@
       },
       "csId": "master-recording",
       "csTitle": "Master Recording",
-      "csUpdated": "2020-09-17T16:08:15.670Z",
+      "csUpdated": "2020-09-18T17:01:24.017Z",
       "duration": "3:23",
       "genre": "Alternative",
       "isrc": "US-S1Z-20-05001",
@@ -416,7 +419,7 @@
   "included": [
     {
       "attributes": {
-        "csCreated": "2020-09-17T16:08:15.956Z",
+        "csCreated": "2020-09-18T17:01:24.184Z",
         "csDescription": "This represents cards of any type",
         "csFeatures": {
           "embedded-css": "embedded.css",
@@ -433,7 +436,7 @@
           "@cardstack/hub": "*"
         },
         "csTitle": "Base Card",
-        "csUpdated": "2020-09-17T16:08:15.956Z"
+        "csUpdated": "2020-09-18T17:01:24.184Z"
       },
       "id": "https://base.cardstack.com/public/cards/base",
       "meta": {
