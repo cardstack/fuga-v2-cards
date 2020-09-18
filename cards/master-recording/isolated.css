@@ -1,4 +1,6 @@
 .isolated-card {
+  --boxel-primary-color: #000;
+
   color: var(--boxel-primary-color);
   font: var(--boxel-font);
   letter-spacing: var(--boxel-lsp);

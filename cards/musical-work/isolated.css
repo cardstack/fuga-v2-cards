@@ -1,6 +1,6 @@
 /* Base Styles */
 .isolated-card {
-  color: var(--ch-dark);
+  color: #000;
   font: var(--boxel-font);
   letter-spacing: var(--boxel-lsp);
 }
@@ -23,7 +23,7 @@
   position: absolute;
   top: 15px;
   left: 20px;
-  color: var(--ch-light-op50);
+  color: var(--boxel-light-purple);
   font: var(--boxel-font-xs);
   font-weight: 600;
   letter-spacing: var(--boxel-lsp-xl);

@@ -83,23 +83,6 @@
             }
           }
         },
-        "participant": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "participant",
-            "csId": "participant"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/base",
-                "type": "cards"
-              }
-            }
-          }
-        },
         "publishers": {
           "attributes": {
             "csFieldArity": "singular",
@@ -199,7 +182,7 @@
       },
       "csId": "musical-work",
       "csTitle": "Musical Work",
-      "csUpdated": "2020-09-18T18:10:21.037Z",
+      "csUpdated": "2020-09-18T20:57:45.370Z",
       "iswc": "T-070237182-9",
       "publishers": "Allegro Music Publishing, Warner Chappell Music",
       "title": "The Sun Comes Out",
@@ -217,12 +200,6 @@
           "id": "https://base.cardstack.com/public/cards/base",
           "type": "cards"
         }
-      },
-      "participant": {
-        "data": {
-          "id": "http://localhost:3000/api/realms/default/cards/participant",
-          "type": "cards"
-        }
       }
     },
     "type": "cards"
@@ -230,7 +207,7 @@
   "included": [
     {
       "attributes": {
-        "csCreated": "2020-09-18T18:10:21.177Z",
+        "csCreated": "2020-09-18T20:57:45.920Z",
         "csDescription": "This represents cards of any type",
         "csFeatures": {
           "embedded-css": "embedded.css",
@@ -247,7 +224,7 @@
           "@cardstack/hub": "*"
         },
         "csTitle": "Base Card",
-        "csUpdated": "2020-09-18T18:10:21.177Z"
+        "csUpdated": "2020-09-18T20:57:45.920Z"
       },
       "id": "https://base.cardstack.com/public/cards/base",
       "meta": {
@@ -261,6 +238,7 @@
       "attributes": {
         "csCreated": "2020-09-18T16:28:08.752Z",
         "csFeatures": {
+          "embedded-css": "embedded.css",
           "isolated-css": "isolated.css"
         },
         "csFieldOrder": [
@@ -406,7 +384,8 @@
           }
         },
         "csFiles": {
-          "isolated.css": "/* Base Styles */\n.isolated-card {\n  --boxel-font-family: 'Open Sans', Helvetica, Arial, sans-serif;\n\n  --boxel-font-lg: 32px/calc(43/32) var(--boxel-font-family);\n  --boxel-font-med: 22px/calc(30/22) var(--boxel-font-family);\n  --boxel-font: 16px/calc(22/16) var(--boxel-font-family);\n  --boxel-font-sm: 13px/calc(18/13) var(--boxel-font-family);\n  --boxel-font-xs: 11px/calc(15/11) var(--boxel-font-family);\n\n  --boxel-lsp-xxl: 0.1em;\n  --boxel-lsp-xl: 0.05em;\n  --boxel-lsp-lg: 0.035em;\n  --boxel-lsp: 0.025em;\n  --boxel-lsp-sm: 0.015em;\n  --boxel-lsp-xs: 0.005em;\n\n  --boxel-border-color: #dedede;\n  --boxel-border: 1px solid var(--boxel-border-color);\n  --boxel-spacing: 20px;\n  --boxel-transition: 0.2s ease;\n\n  --boxel-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);\n  --boxel-box-shadow-hover: 0 3px 10px rgba(0, 0, 0, 0.15);\n\n  color: var(--ch-dark);\n  font: var(--boxel-font);\n  letter-spacing: var(--boxel-lsp);\n}\n\na {\n  display: inline-block;\n  color: inherit;\n  text-decoration: none;\n}\n\nbutton {\n  display: inline-block;\n  color: currentColor;\n  font: inherit;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin: 0;\n  font: inherit;\n}\n\nsvg {\n  display: inline-block;\n}\n\nul {\n  list-style-type: none;\n  margin: 0;\n  padding-left: 0;\n}\n\n\n/* Header */\n.isolated-card__header {\n  height: 270px;\n  max-width: 845px;\n  margin: 0 auto;\n  padding: 10px;\n  display: grid;\n  grid-template-columns: 270px 1fr;\n  align-items: center;\n  gap: 0 30px;\n  border-bottom: var(--boxel-border);\n}\n\n.isolated-card__label {\n  position: absolute;\n  top: 15px;\n  left: 20px;\n  color: var(--ch-light-op50);\n  font: var(--boxel-font-xs);\n  font-weight: 600;\n  letter-spacing: var(--boxel-lsp-xl);\n  text-transform: uppercase;\n}\n\n.isolated-card__img {\n  justify-self: center;\n  width: 150px;\n  height: 150px;\n  border-radius: 100px;\n  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg');\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n\n.isolated-card__title {\n  font: var(--boxel-font-lg);\n  font-weight: 700;\n  letter-spacing: 0;\n}\n\n.isolated-card__description {\n  color: #666;\n}\n\n\n/* Section */\n.media-detail-section {\n  display: grid;\n  gap: 10px;\n  padding: 25px 0 60px;\n}\n\n.media-detail-section__contents {\n  padding: 0 50px;\n}\n\n\n/* Fields */\n.field {\n  display: grid;\n  grid-template-columns: 190px 450px;\n  gap: 30px;\n  padding: 10px;\n  max-width: 690px;\n  margin: 0 auto;\n}\n\n.label {\n  font: var(--boxel-font-sm);\n  font-weight: bold;\n  letter-spacing: var(--boxel-lsp-xl);\n  line-height: 22px;\n  text-transform: uppercase;\n  text-align: right;\n}\n\n.value {\n  max-width: 100%;\n  letter-spacing: var(--boxel-lsp-sm);\n}\n\n\n/* Field name-specific styles */\n.verifi-id-value {\n  word-wrap: break-word;\n}\n"
+          "embedded.css": ".embedded-card {\n  --card-primary-color: #000;\n  --card-secondary-color: var(--boxel-medium-light-purple);\n\n  width: 100%;\n  max-width: 450px;\n  background-color: #fff;\n  border-radius: var(--boxel-border-radius);\n  border: var(--boxel-border);\n  color: var(--card-primary-color);\n  font: var(--boxel-font);\n  letter-spacing: var(--boxel-lsp);\n  transition: box-shadow var(--boxel-transition);\n}\n\n.embedded-card:hover {\n  box-shadow: var(--boxel-box-shadow);\n}\n\n.embedded-card:hover .embedded-card__header {\n  color: var(--boxel-medium-grey);\n}\n\n.embedded-card__header {\n  height: 30px;\n  padding: 7px 15px;\n  border-radius: 10px 10px 0 0;\n  background-color: var(--boxel-light-grey);\n  color: var(--boxel-light-purple);\n  font: var(--boxel-font-xs);\n  font-weight: 600;\n  letter-spacing: var(--boxel-lsp-xl);\n  text-transform: uppercase;\n  transition: background-image var(--boxel-transition), color var(--boxel-transition);\n}\n\n.embedded-card__inner {\n  position: relative;\n  display: grid;\n  align-items: center;\n  gap: 3px 15px;\n  grid-template:\n  \"img .\"     auto\n  \"img .\"     auto\n  \"img title\" auto\n  \"img desc\"  auto\n  \"img .\"     auto\n  \"img .\"     auto / auto 1fr;\n  min-height: 90px;\n  padding: 15px;\n  font: var(--boxel-font);\n  letter-spacing: var(--boxel-lsp);\n  overflow: hidden;\n}\n\n.embedded-card__title {\n  grid-area: title;\n  align-self: end;\n  margin: 0;\n  font: inherit;\n  font-weight: 700;\n  letter-spacing: inherit;\n}\n\n.embedded-card__description {\n  grid-area: desc;\n  align-self: start;\n  margin: 0;\n  color: var(--card-secondary-color);\n  font: var(--boxel-font-sm);\n  letter-spacing: inherit;\n  overflow-wrap: break-word;\n  word-break: break-word;\n}\n\n.embedded-card__bg-img {\n  grid-column: 1;\n  grid-area: img;\n  width: 50px;\n  height: 50px;\n  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg');\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  border-radius: 100px;\n}\n\n\n/* Fields */\n.embedded-card__fields {\n  list-style-type: none;\n  margin: 0;\n  padding-left: 0;\n  padding-top: 25px;\n  grid-column: 1 / -1;\n  display: grid;\n  grid-template-columns: repeat(4, auto);\n  justify-items: start;\n  gap: 30px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n\n.embedded-card__field .field {\n  grid-template-columns: auto;\n  gap: 3px;\n  padding: 0;\n  justify-items: start;\n}\n\n.embedded-card__field .label {\n  color: var(--card-secondary-color);\n  font: var(--boxel-font-xs);\n  font-weight: 700;\n  letter-spacing: var(--boxel-lsp-xl);\n  text-transform: uppercase;\n  text-align: left;\n}\n\n.embedded-card__field .value {\n  font: var(--boxel-font-sm);\n}\n",
+          "isolated.css": "/* Base Styles */\n.isolated-card {\n  color: var(--ch-dark);\n  font: var(--boxel-font);\n  letter-spacing: var(--boxel-lsp);\n}\n\n\n/* Header */\n.isolated-card__header {\n  height: 270px;\n  max-width: 845px;\n  margin: 0 auto;\n  padding: 10px;\n  display: grid;\n  grid-template-columns: 270px 1fr;\n  align-items: center;\n  gap: 0 30px;\n  border-bottom: var(--boxel-border);\n}\n\n.isolated-card__label {\n  position: absolute;\n  top: 15px;\n  left: 20px;\n  color: var(--ch-light-op50);\n  font: var(--boxel-font-xs);\n  font-weight: 600;\n  letter-spacing: var(--boxel-lsp-xl);\n  text-transform: uppercase;\n}\n\n.isolated-card__img {\n  justify-self: center;\n  width: 150px;\n  height: 150px;\n  border-radius: 100px;\n  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg');\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n\n.isolated-card__title {\n  margin: 0;\n  font: var(--boxel-font-lg);\n  font-weight: 700;\n  letter-spacing: 0;\n}\n\n.isolated-card__description {\n  margin: 0;\n  color: var(--boxel-medium-light-purple);\n  font: inherit;\n  letter-spacing: inherit;\n}\n\n\n/* Section */\n.media-detail-section {\n  display: grid;\n  gap: 10px;\n  padding: 25px 0 60px;\n}\n\n.media-detail-section__contents {\n  padding: 0 50px;\n}\n\n\n/* Fields */\n.field {\n  display: grid;\n  grid-template-columns: 190px 450px;\n  gap: 30px;\n  padding: 10px;\n  max-width: 690px;\n  margin: 0 auto;\n}\n\n.label {\n  font: var(--boxel-font-sm);\n  font-weight: bold;\n  letter-spacing: var(--boxel-lsp-xl);\n  line-height: 22px;\n  text-transform: uppercase;\n  text-align: right;\n}\n\n.value {\n  max-width: 100%;\n  letter-spacing: var(--boxel-lsp-sm);\n}\n\n\n/* Field name-specific styles */\n.verifi-id-value {\n  word-wrap: break-word;\n}\n"
         },
         "csId": "participant",
         "csTitle": "participant",
