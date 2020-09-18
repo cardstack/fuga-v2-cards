@@ -1,5 +1,4 @@
 module.exports = async function({ field, card }) {
-  console.log("HERE")
   let foreignKey = await field.value('foreignKey');
   let foreignType = await field.value('foreignType');
   try {

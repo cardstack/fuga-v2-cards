@@ -1,33 +1,24 @@
 {
   "data": {
     "attributes": {
-      "csCreated": "2020-08-03T15:38:30.625Z",
+      "csCreated": "2020-09-18T23:15:58.256Z",
       "csFieldOrder": [
       ],
-      "csFieldSets": {
-        "embedded": [
-        ],
-        "isolated": [
-        ]
+      "csFields": {
       },
-      "csFields": {},
-      "csId": "has-many",
-      "csTitle": "Has Many",
-      "csUpdated": "2020-08-03T15:38:43.282Z",
-      "csFeatures": {
-        "compute": "compute.js"
-      },
-      "csFiles": {
-        "compute.js": "module.exports = async function({ field, card }) {\n  let foreignKey = await field.value('foreignKey');\n  let foreignType = await field.value('foreignType');\n  try {\n    let found = await card.reader.search({\n      filter: {\n        type: foreignType,\n        eq: {\n         [foreignKey + '.csId']:  card.csId,\n         [foreignKey + '.csRealm']:  card.csRealm,\n         [foreignKey + '.csOriginalRealm']:  card.csOriginalRealm\n        },\n      },\n    });\n    return { value: found.cards };\n  } catch (err) {\n    return { value: [] };\n  }\n}\n"
-      }
+      "csId": "18d9fc1ddb8147973a5cde0c7a1e3168515403cc",
+      "csTitle": "Fearless",
+      "csUpdated": "2020-09-18T23:16:54.875Z",
+      "title": "Fearless "
     },
-    "id": "http://localhost:3000/api/realms/default/cards/has-many",
+    "id": "http://localhost:3000/api/realms/default/cards/18d9fc1ddb8147973a5cde0c7a1e3168515403cc",
     "meta": {
+      "cardDir": "/Users/alex/cardstack/fuga-v2-cards/cards/18d9fc1ddb8147973a5cde0c7a1e3168515403cc"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "https://base.cardstack.com/public/cards/base",
+          "id": "http://localhost:3000/api/realms/default/cards/musical-work",
           "type": "cards"
         }
       }
@@ -37,7 +28,120 @@
   "included": [
     {
       "attributes": {
-        "csCreated": "2020-08-03T15:38:43.316Z",
+        "csCreated": "2020-08-03T15:38:30.625Z",
+        "csFieldOrder": [
+        ],
+        "csFieldSets": {
+          "embedded": [
+            "title"
+          ],
+          "isolated": [
+            "title",
+            "masterRecordings"
+          ]
+        },
+        "csFields": {
+          "masterRecordings": {
+            "attributes": {
+              "csFieldArity": "plural",
+              "csFieldSets": {
+                "embedded": [
+                  "foreignKey",
+                  "foreignType"
+                ],
+                "isolated": [
+                  "foreignKey",
+                  "foreignType"
+                ]
+              },
+              "csFields": {
+                "foreignKey": {
+                  "attributes": {
+                    "csFields": {
+                    }
+                  },
+                  "relationships": {
+                    "csAdoptsFrom": {
+                      "data": {
+                        "id": "https://base.cardstack.com/public/cards/string-field",
+                        "type": "cards"
+                      }
+                    }
+                  }
+                },
+                "foreignType": {
+                  "attributes": {
+                    "csFields": {
+                    }
+                  },
+                  "relationships": {
+                    "csAdoptsFrom": {
+                      "data": {
+                        "id": "https://base.cardstack.com/public/cards/string-field",
+                        "type": "cards"
+                      }
+                    }
+                  }
+                }
+              },
+              "csId": "masterRecordings",
+              "csTitle": "Master Recordings",
+              "foreignKey": "musicalWork",
+              "foreignType": {
+                "csId": "master-recording",
+                "csRealm": "http://localhost:3000/api/realms/default"
+              }
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "http://localhost:3000/api/realms/default/cards/has-many",
+                  "type": "cards"
+                }
+              }
+            }
+          },
+          "title": {
+            "attributes": {
+              "csFieldArity": "singular",
+              "csFields": {
+              },
+              "csTitle": "Title"
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "https://base.cardstack.com/public/cards/string-field",
+                  "type": "cards"
+                }
+              }
+            }
+          }
+        },
+        "csFiles": {
+        },
+        "csId": "musical-work",
+        "csTitle": "Musical Work",
+        "csUpdated": "2020-09-18T13:41:24.276Z",
+        "title": "asdf - sdf"
+      },
+      "id": "http://localhost:3000/api/realms/default/cards/musical-work",
+      "meta": {
+        "cardDir": "/Users/alex/cardstack/fuga-v2-cards/cards/musical-work"
+      },
+      "relationships": {
+        "csAdoptsFrom": {
+          "data": {
+            "id": "https://base.cardstack.com/public/cards/base",
+            "type": "cards"
+          }
+        }
+      },
+      "type": "cards"
+    },
+    {
+      "attributes": {
+        "csCreated": "2020-09-18T23:16:55.455Z",
         "csDescription": "This represents cards of any type",
         "csFeatures": {
           "embedded-css": "embedded.css",
@@ -54,7 +158,7 @@
           "@cardstack/hub": "*"
         },
         "csTitle": "Base Card",
-        "csUpdated": "2020-08-03T15:38:43.316Z"
+        "csUpdated": "2020-09-18T23:16:55.455Z"
       },
       "id": "https://base.cardstack.com/public/cards/base",
       "meta": {
