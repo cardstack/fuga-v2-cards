@@ -24,6 +24,11 @@ const SECTIONS = [
     "fieldNames": ["verifi-id"]
   },
   {
+    "id": "musical-work",
+    "title": "Musical Work",
+    "fieldNames": ["musical-work"]
+  },
+  {
     "id": "files",
     "title": "Files",
     "fieldNames": ["cover-art"]
@@ -47,7 +52,6 @@ const SECTIONS = [
   }
 ];
 
-// TODO: truncated-verifi-id should be a computed
 const HEADER_FIELDS = {
   "title": "title",
   "description": "artist",
