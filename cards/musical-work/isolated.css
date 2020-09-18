@@ -1,63 +1,8 @@
 /* Base Styles */
 .isolated-card {
-  --boxel-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-
-  --boxel-font-lg: 32px/calc(43/32) var(--boxel-font-family);
-  --boxel-font-med: 22px/calc(30/22) var(--boxel-font-family);
-  --boxel-font: 16px/calc(22/16) var(--boxel-font-family);
-  --boxel-font-sm: 13px/calc(18/13) var(--boxel-font-family);
-  --boxel-font-xs: 11px/calc(15/11) var(--boxel-font-family);
-
-  --boxel-lsp-xxl: 0.1em;
-  --boxel-lsp-xl: 0.05em;
-  --boxel-lsp-lg: 0.035em;
-  --boxel-lsp: 0.025em;
-  --boxel-lsp-sm: 0.015em;
-  --boxel-lsp-xs: 0.005em;
-
-  --boxel-border-color: #dedede;
-  --boxel-border: 1px solid var(--boxel-border-color);
-  --boxel-spacing: 20px;
-  --boxel-transition: 0.2s ease;
-
-  --boxel-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  --boxel-box-shadow-hover: 0 3px 10px rgba(0, 0, 0, 0.15);
-
   color: var(--ch-dark);
   font: var(--boxel-font);
   letter-spacing: var(--boxel-lsp);
-}
-
-a {
-  display: inline-block;
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  display: inline-block;
-  color: currentColor;
-  font: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font: inherit;
-}
-
-svg {
-  display: inline-block;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
 }
 
 
@@ -96,13 +41,17 @@ ul {
 }
 
 .isolated-card__title {
+  margin: 0;
   font: var(--boxel-font-lg);
   font-weight: 700;
   letter-spacing: 0;
 }
 
 .isolated-card__description {
-  color: #666;
+  margin: 0;
+  color: var(--boxel-medium-light-purple);
+  font: inherit;
+  letter-spacing: inherit;
 }
 
 

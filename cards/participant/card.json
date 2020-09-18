@@ -3,7 +3,8 @@
     "attributes": {
       "csCreated": "2020-09-18T16:28:08.752Z",
       "csFeatures": {
-        "isolated-css": "isolated.css"
+        "isolated-css": "isolated.css",
+        "embedded-css": "embedded.css"
       },
       "csFieldOrder": [
         "title",

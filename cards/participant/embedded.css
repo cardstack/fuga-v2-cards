@@ -1,0 +1,122 @@
+.embedded-card {
+  --card-primary-color: #000;
+  --card-secondary-color: var(--boxel-medium-light-purple);
+
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: var(--boxel-border-radius);
+  border: var(--boxel-border);
+  color: var(--card-primary-color);
+  font: var(--boxel-font);
+  letter-spacing: var(--boxel-lsp);
+  transition: box-shadow var(--boxel-transition);
+}
+
+.embedded-card:hover {
+  box-shadow: var(--boxel-box-shadow);
+}
+
+.embedded-card:hover .embedded-card__header {
+  color: var(--boxel-medium-grey);
+}
+
+.embedded-card__header {
+  height: 30px;
+  padding: 7px 15px;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--boxel-light-grey);
+  color: var(--boxel-light-purple);
+  font: var(--boxel-font-xs);
+  font-weight: 600;
+  letter-spacing: var(--boxel-lsp-xl);
+  text-transform: uppercase;
+  transition: background-image var(--boxel-transition), color var(--boxel-transition);
+}
+
+.embedded-card__inner {
+  position: relative;
+  display: grid;
+  align-items: center;
+  gap: 3px 15px;
+  grid-template:
+  "img ."     auto
+  "img ."     auto
+  "img title" auto
+  "img desc"  auto
+  "img ."     auto
+  "img ."     auto / auto 1fr;
+  min-height: 90px;
+  padding: 15px;
+  font: var(--boxel-font);
+  letter-spacing: var(--boxel-lsp);
+  overflow: hidden;
+}
+
+.embedded-card__title {
+  grid-area: title;
+  align-self: end;
+  margin: 0;
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: inherit;
+}
+
+.embedded-card__description {
+  grid-area: desc;
+  align-self: start;
+  margin: 0;
+  color: var(--card-secondary-color);
+  font: var(--boxel-font-sm);
+  letter-spacing: inherit;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.embedded-card__bg-img {
+  grid-column: 1;
+  grid-area: img;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100px;
+}
+
+
+/* Fields */
+.embedded-card__fields {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 25px;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-items: start;
+  gap: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.embedded-card__field .field {
+  grid-template-columns: auto;
+  gap: 3px;
+  padding: 0;
+  justify-items: start;
+}
+
+.embedded-card__field .label {
+  color: var(--card-secondary-color);
+  font: var(--boxel-font-xs);
+  font-weight: 700;
+  letter-spacing: var(--boxel-lsp-xl);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.embedded-card__field .value {
+  font: var(--boxel-font-sm);
+}

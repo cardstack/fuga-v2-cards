@@ -1,0 +1,21 @@
+<div
+  class="embedded-card card-boundary"
+  data-test-embedded-card={{@card.canonicalURL}}
+  data-test-embedded-card-mode={{@mode}}
+>
+  <header class="embedded-card__header">
+    {{@card.csId}}
+  </header>
+  <div class="embedded-card__inner">
+    <div class="embedded-card__bg-img" style={{css-url "background-image" this.headerFields.image}} />
+    <h3 class="embedded-card__title">{{this.headerFields.title}}</h3>
+    <p class="embedded-card__description">{{this.headerFields.description}}</p>
+    <ul class="embedded-card__fields">
+      {{#each this.detailFields as | field |}}
+        <li class="embedded-card__field">
+          <FieldRenderer @field={{field}} @mode={{@mode}} @loadedField={{@loadedField}}/>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
