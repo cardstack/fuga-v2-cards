@@ -1,0 +1,224 @@
+/* Base Styles */
+.isolated-card {
+  --boxel-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+  --boxel-font-lg: 32px/calc(43/32) var(--boxel-font-family);
+  --boxel-font-med: 22px/calc(30/22) var(--boxel-font-family);
+  --boxel-font: 16px/calc(22/16) var(--boxel-font-family);
+  --boxel-font-sm: 13px/calc(18/13) var(--boxel-font-family);
+  --boxel-font-xs: 11px/calc(15/11) var(--boxel-font-family);
+
+  --boxel-lsp-xxl: 0.1em;
+  --boxel-lsp-xl: 0.05em;
+  --boxel-lsp-lg: 0.035em;
+  --boxel-lsp: 0.025em;
+  --boxel-lsp-sm: 0.015em;
+  --boxel-lsp-xs: 0.005em;
+
+  --boxel-border-color: #dedede;
+  --boxel-border: 1px solid var(--boxel-border-color);
+  --boxel-spacing: 20px;
+  --boxel-transition: 0.2s ease;
+
+  --boxel-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --boxel-box-shadow-hover: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+  --boxel-primary-color: var(--ch-dark);
+
+  color: var(--boxel-primary-color);
+  font: var(--boxel-font);
+  letter-spacing: var(--boxel-lsp);
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  color: currentColor;
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font: inherit;
+}
+
+svg {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+
+/* Header */
+.isolated-card__header {
+  --boxel-primary-color: var(--ch-light);
+
+  background-color: var(--ch-light-op50);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--boxel-primary-color);
+}
+
+.isolated-card__label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font: var(--boxel-font-xs);
+  font-weight: 600;
+  letter-spacing: var(--boxel-lsp-xl);
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.isolated-card__header-content {
+  max-width: 100%;
+  max-height: 370px;
+  padding: 60px 30px 50px 70px;
+  display: grid;
+  grid-template:
+    "img title"   2fr
+    "img desc"    1fr
+    "img details" 1fr / minmax(160px, 260px) 1fr;
+  gap: 0 30px;
+  backdrop-filter: brightness(0.75) blur(50px) contrast(1.2);
+}
+
+.isolated-card__header-content.no-bg {
+  backdrop-filter: brightness(0.4);
+}
+
+.isolated-card__img {
+  grid-area: img;
+  align-self: center;
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/album_art-d1fcf1d7166e3a6a73cc4651ad0f6267.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: var(--boxel-box-shadow);
+}
+
+/* .isolated-card__play-btn {
+  --icon-color: rgba(0, 0, 0, 0.5);
+  --icon-border: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+.isolated-card__header-details {
+  grid-area: details;
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 30px;
+}
+
+.isolated-card__title {
+  grid-area: title;
+  align-self: end;
+  font: var(--boxel-font-lg);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.isolated-card__description {
+  grid-area: desc;
+}
+
+
+/* Header detail fields */
+.isolated-card__header-field .field {
+  grid-template-columns: auto;
+  gap: 3px;
+  padding: 0;
+  justify-items: start;
+  white-space: nowrap;
+}
+
+.isolated-card__header-field .label {
+  font: var(--boxel-font-xs);
+  font-weight: bold;
+  letter-spacing: var(--boxel-lsp-xl);
+  text-transform: uppercase;
+}
+
+.isolated-card__header-field .value {
+  font: var(--boxel-font-sm);
+  letter-spacing: var(--boxel-lsp);
+}
+
+
+/* Section */
+.media-detail-section {
+  display: grid;
+  gap: 10px;
+  padding: 25px 0 60px;
+}
+
+.media-detail-section + .media-detail-section {
+  border-top: var(--boxel-border);
+}
+
+.media-detail-section__title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding-left: 45px;
+  padding-bottom: 5px;
+}
+
+.media-detail-section__contents {
+  padding: 0 50px;
+}
+
+
+/* Fields */
+.field {
+  display: grid;
+  grid-template-columns: 190px 450px;
+  gap: 30px;
+  padding: 10px;
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+.label {
+  font: var(--boxel-font-sm);
+  font-weight: bold;
+  letter-spacing: var(--boxel-lsp-xl);
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.value {
+  max-width: 100%;
+  letter-spacing: var(--boxel-lsp-sm);
+}
+
+
+/* Field name-specific styles */
+.verifi-id-value {
+  word-wrap: break-word;
+}
