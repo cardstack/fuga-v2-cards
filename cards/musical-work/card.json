@@ -32,7 +32,8 @@
           "verifi-id",
           "publishers",
           "version-type",
-          "participant"
+          "participant",
+          "master-recordings"
         ]
       },
       "csFields": {
@@ -396,6 +397,65 @@
                 "data": {
                   "id": "https://base.cardstack.com/public/cards/url-field",
                   "type": "cards"
+                }
+              }
+            }
+          },
+          "master-recordings": {
+            "attributes": {
+              "foreignKey": "musical-work",
+              "foreignType": {
+                "csRealm": "http://localhost:3000/api/realms/default",
+                "csId": "master-recording"
+              },
+              "csFieldSets": {
+                "isolated": [
+                  "foreignKey",
+                  "foreignType"
+                ],
+                "embedded": [
+                  "foreignKey",
+                  "foreignType"
+                ]
+              },
+              "csFieldArity": "plural",
+              "csTitle": "Master Recordings",
+              "csId": "master-recordings",
+
+              "csFields": {
+                "foreignKey": {
+                  "attributes": {
+                    "csFields": {}
+                  },
+                  "relationships": {
+                    "csAdoptsFrom": {
+                      "data": {
+                        "type": "cards",
+                        "id": "https://base.cardstack.com/public/cards/string-field"
+                      }
+                    }
+                  }
+                },
+                "foreignType": {
+                  "attributes": {
+                    "csFields": {}
+                  },
+                  "relationships": {
+                    "csAdoptsFrom": {
+                      "data": {
+                        "type": "cards",
+                        "id": "https://base.cardstack.com/public/cards/string-field"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "type": "cards",
+                  "id": "http://localhost:3000/api/realms/default/cards/has-many"
                 }
               }
             }
