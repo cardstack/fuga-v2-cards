@@ -1,0 +1,99 @@
+/* Base Styles */
+.isolated-card {
+  color: #000;
+  font: var(--boxel-font);
+  letter-spacing: var(--boxel-lsp);
+}
+
+
+/* Header */
+.isolated-card__header {
+  height: 270px;
+  max-width: 845px;
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  align-items: center;
+  gap: 0 30px;
+  border-bottom: var(--boxel-border);
+}
+
+.isolated-card__label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: var(--boxel-light-purple);
+  font: var(--boxel-font-xs);
+  font-weight: 600;
+  letter-spacing: var(--boxel-lsp-xl);
+  text-transform: uppercase;
+}
+
+.isolated-card__img {
+  justify-self: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.isolated-card__title {
+  margin: 0;
+  font: var(--boxel-font-lg);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.isolated-card__description {
+  margin: 0;
+  color: var(--boxel-medium-light-purple);
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+
+/* Section */
+.media-detail-section {
+  display: grid;
+  gap: 10px;
+  padding: 25px 0 60px;
+}
+
+.media-detail-section__contents {
+  padding: 0 50px;
+}
+
+
+/* Fields */
+.field {
+  display: grid;
+  grid-template-columns: 190px 450px;
+  gap: 30px;
+  padding: 10px;
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+.label {
+  font: var(--boxel-font-sm);
+  font-weight: bold;
+  letter-spacing: var(--boxel-lsp-xl);
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.value {
+  max-width: 100%;
+  letter-spacing: var(--boxel-lsp-sm);
+}
+
+
+/* Field name-specific styles */
+.verifi-id-value {
+  word-wrap: break-word;
+}

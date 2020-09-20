@@ -1,19 +1,122 @@
 {
   "data": {
     "attributes": {
+      "copyright": "© 2019 Warner Chappell Music, © 2019 Allegro Music Publishing",
       "csCreated": "2020-08-03T15:38:30.625Z",
+      "csFeatures": {
+        "isolated-css": "isolated.css",
+        "embedded-css": "embedded.css"
+      },
       "csFieldOrder": [
+        "title",
+        "writers",
+        "iswc",
+        "verifi-id",
+        "version-type",
+        "publishers",
+        "copyright",
+        "participant"
       ],
       "csFieldSets": {
         "embedded": [
-          "title"
+          "iswc",
+          "title",
+          "writers",
+          "truncated-verifi-id"
         ],
         "isolated": [
+          "iswc",
           "title",
-          "masterRecordings"
+          "writers",
+          "copyright",
+          "verifi-id",
+          "publishers",
+          "version-type",
+          "participant",
+          "master-recordings"
         ]
       },
       "csFields": {
+        "copyright": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Copyright Notice"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "iswc": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "ISWC"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "ownership-splits": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Ownership Splits"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "publishers": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Publishers"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "source": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Source"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
         "title": {
           "attributes": {
             "csFieldArity": "singular",
@@ -30,61 +133,66 @@
             }
           }
         },
-        "masterRecordings": {
+        "truncated-verifi-id": {
           "attributes": {
-            "foreignKey": "musicalWork",
-            "foreignType": {
-              "csRealm": "http://localhost:3000/api/realms/default",
-              "csId": "master-recording"
-            },
-            "csFieldSets": {
-              "isolated": [
-                "foreignKey",
-                "foreignType"
-              ],
-              "embedded": [
-                "foreignKey",
-                "foreignType"
-              ]
-            },
-            "csFieldArity": "plural",
-            "csTitle": "Master Recordings",
-            "csId": "masterRecordings",
-
+            "csFieldArity": "singular",
             "csFields": {
-              "foreignKey": {
-                "attributes": {
-                  "csFields": {}
-                },
-                "relationships": {
-                  "csAdoptsFrom": {
-                    "data": {
-                      "type": "cards",
-                      "id": "https://base.cardstack.com/public/cards/string-field"
-                    }
-                  }
-                }
-              },
-              "foreignType": {
-                "attributes": {
-                  "csFields": {}
-                },
-                "relationships": {
-                  "csAdoptsFrom": {
-                    "data": {
-                      "type": "cards",
-                      "id": "https://base.cardstack.com/public/cards/string-field"
-                    }
-                  }
-                }
-              }
-            }
+            },
+            "csTitle": "Verifi Id"
           },
           "relationships": {
             "csAdoptsFrom": {
               "data": {
-                "type": "cards",
-                "id": "http://localhost:3000/api/realms/default/cards/has-many"
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "verifi-id": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Verifi ID"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "version-type": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Version Type"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "writers": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Writers"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
               }
             }
           }
@@ -92,12 +200,18 @@
       },
       "csId": "musical-work",
       "csTitle": "Musical Work",
-      "csUpdated": "2020-09-18T13:41:24.276Z",
-      "title": "asdf - sdf"
+      "csUpdated": "2020-09-18T20:57:45.370Z",
+      "iswc": "T-070237182-9",
+      "publishers": "Allegro Music Publishing, Warner Chappell Music",
+      "title": "The Sun Comes Out",
+      "verifi-id": "0xab5332b7a35d6ca5d8bd3781fb7c28071341127dc2f1b6928c38e2809e89179ce",
+      "truncated-verifi-id": "0xab53...79ce",
+      "version-type": "Original Work",
+      "writers": "Valentino Solano, Emilio Rosso, Maria Bianchi"
     },
     "id": "http://localhost:3000/api/realms/default/cards/musical-work",
     "meta": {
-      "cardDir": "../../../fuga-v2-cards/cards/musical-work"
+      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/musical-work"
     },
     "relationships": {
       "csAdoptsFrom": {
@@ -112,7 +226,7 @@
   "included": [
     {
       "attributes": {
-        "csCreated": "2020-09-18T13:41:24.330Z",
+        "csCreated": "2020-09-18T20:57:45.920Z",
         "csDescription": "This represents cards of any type",
         "csFeatures": {
           "embedded-css": "embedded.css",
@@ -129,13 +243,250 @@
           "@cardstack/hub": "*"
         },
         "csTitle": "Base Card",
-        "csUpdated": "2020-09-18T13:41:24.330Z"
+        "csUpdated": "2020-09-18T20:57:45.920Z"
       },
       "id": "https://base.cardstack.com/public/cards/base",
       "meta": {
-        "cardDir": "/Users/alex/cardstack/fuga-v2/node_modules/@cardstack/base-card"
+        "cardDir": "/Users/burcunoyan/fuga-v2/node_modules/@cardstack/base-card"
       },
       "relationships": {
+      },
+      "type": "cards"
+    },
+    {
+      "attributes": {
+        "csCreated": "2020-09-18T16:28:08.752Z",
+        "csFeatures": {
+          "embedded-css": "embedded.css",
+          "isolated-css": "isolated.css"
+        },
+        "csFieldOrder": [
+          "title",
+          "img-url",
+          "ipi",
+          "pro",
+          "email",
+          "role",
+          "website"
+        ],
+        "csFieldSets": {
+          "embedded": [
+            "ipi",
+            "pro",
+            "email",
+            "title",
+            "img-url",
+            "website"
+          ],
+          "isolated": [
+            "ipi",
+            "pro",
+            "email",
+            "title",
+            "img-url",
+            "website",
+            "role"
+          ]
+        },
+        "csFields": {
+          "email": {
+            "attributes": {
+              "csFieldArity": "singular",
+              "csFields": {
+              },
+              "csTitle": "Email"
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "https://base.cardstack.com/public/cards/string-field",
+                  "type": "cards"
+                }
+              }
+            }
+          },
+          "img-url": {
+            "attributes": {
+              "csFieldArity": "singular",
+              "csFields": {
+              },
+              "csTitle": "Image URL"
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "https://base.cardstack.com/public/cards/image-reference-field",
+                  "type": "cards"
+                }
+              }
+            }
+          },
+          "ipi": {
+            "attributes": {
+              "csFieldArity": "singular",
+              "csFields": {
+              },
+              "csTitle": "CAE/IPI #"
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "https://base.cardstack.com/public/cards/string-field",
+                  "type": "cards"
+                }
+              }
+            }
+          },
+          "pro": {
+            "attributes": {
+              "csFieldArity": "singular",
+              "csFields": {
+              },
+              "csTitle": "PRO"
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "https://base.cardstack.com/public/cards/string-field",
+                  "type": "cards"
+                }
+              }
+            }
+          },
+          "role": {
+            "attributes": {
+              "csFieldArity": "singular",
+              "csFields": {
+              },
+              "csTitle": "Role"
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "https://base.cardstack.com/public/cards/string-field",
+                  "type": "cards"
+                }
+              }
+            }
+          },
+          "title": {
+            "attributes": {
+              "csFieldArity": "singular",
+              "csFields": {
+              },
+              "csTitle": "Title"
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "https://base.cardstack.com/public/cards/string-field",
+                  "type": "cards"
+                }
+              }
+            }
+          },
+          "website": {
+            "attributes": {
+              "csFieldArity": "singular",
+              "csFields": {
+              },
+              "csTitle": "Website"
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "id": "https://base.cardstack.com/public/cards/url-field",
+                  "type": "cards"
+                }
+              }
+            }
+          },
+          "master-recordings": {
+            "attributes": {
+              "foreignKey": "musical-work",
+              "foreignType": {
+                "csRealm": "http://localhost:3000/api/realms/default",
+                "csId": "master-recording"
+              },
+              "csFieldSets": {
+                "isolated": [
+                  "foreignKey",
+                  "foreignType"
+                ],
+                "embedded": [
+                  "foreignKey",
+                  "foreignType"
+                ]
+              },
+              "csFieldArity": "plural",
+              "csTitle": "Master Recordings",
+              "csId": "master-recordings",
+
+              "csFields": {
+                "foreignKey": {
+                  "attributes": {
+                    "csFields": {}
+                  },
+                  "relationships": {
+                    "csAdoptsFrom": {
+                      "data": {
+                        "type": "cards",
+                        "id": "https://base.cardstack.com/public/cards/string-field"
+                      }
+                    }
+                  }
+                },
+                "foreignType": {
+                  "attributes": {
+                    "csFields": {}
+                  },
+                  "relationships": {
+                    "csAdoptsFrom": {
+                      "data": {
+                        "type": "cards",
+                        "id": "https://base.cardstack.com/public/cards/string-field"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "relationships": {
+              "csAdoptsFrom": {
+                "data": {
+                  "type": "cards",
+                  "id": "http://localhost:3000/api/realms/default/cards/has-many"
+                }
+              }
+            }
+          }
+        },
+        "csFiles": {
+          "embedded.css": ".embedded-card {\n  --card-primary-color: #000;\n  --card-secondary-color: var(--boxel-medium-light-purple);\n\n  width: 100%;\n  max-width: 450px;\n  background-color: #fff;\n  border-radius: var(--boxel-border-radius);\n  border: var(--boxel-border);\n  color: var(--card-primary-color);\n  font: var(--boxel-font);\n  letter-spacing: var(--boxel-lsp);\n  transition: box-shadow var(--boxel-transition);\n}\n\n.embedded-card:hover {\n  box-shadow: var(--boxel-box-shadow);\n}\n\n.embedded-card:hover .embedded-card__header {\n  color: var(--boxel-medium-grey);\n}\n\n.embedded-card__header {\n  height: 30px;\n  padding: 7px 15px;\n  border-radius: 10px 10px 0 0;\n  background-color: var(--boxel-light-grey);\n  color: var(--boxel-light-purple);\n  font: var(--boxel-font-xs);\n  font-weight: 600;\n  letter-spacing: var(--boxel-lsp-xl);\n  text-transform: uppercase;\n  transition: background-image var(--boxel-transition), color var(--boxel-transition);\n}\n\n.embedded-card__inner {\n  position: relative;\n  display: grid;\n  align-items: center;\n  gap: 3px 15px;\n  grid-template:\n  \"img .\"     auto\n  \"img .\"     auto\n  \"img title\" auto\n  \"img desc\"  auto\n  \"img .\"     auto\n  \"img .\"     auto / auto 1fr;\n  min-height: 90px;\n  padding: 15px;\n  font: var(--boxel-font);\n  letter-spacing: var(--boxel-lsp);\n  overflow: hidden;\n}\n\n.embedded-card__title {\n  grid-area: title;\n  align-self: end;\n  margin: 0;\n  font: inherit;\n  font-weight: 700;\n  letter-spacing: inherit;\n}\n\n.embedded-card__description {\n  grid-area: desc;\n  align-self: start;\n  margin: 0;\n  color: var(--card-secondary-color);\n  font: var(--boxel-font-sm);\n  letter-spacing: inherit;\n  overflow-wrap: break-word;\n  word-break: break-word;\n}\n\n.embedded-card__bg-img {\n  grid-column: 1;\n  grid-area: img;\n  width: 50px;\n  height: 50px;\n  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg');\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  border-radius: 100px;\n}\n\n\n/* Fields */\n.embedded-card__fields {\n  list-style-type: none;\n  margin: 0;\n  padding-left: 0;\n  padding-top: 25px;\n  grid-column: 1 / -1;\n  display: grid;\n  grid-template-columns: repeat(4, auto);\n  justify-items: start;\n  gap: 30px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n\n.embedded-card__field .field {\n  grid-template-columns: auto;\n  gap: 3px;\n  padding: 0;\n  justify-items: start;\n}\n\n.embedded-card__field .label {\n  color: var(--card-secondary-color);\n  font: var(--boxel-font-xs);\n  font-weight: 700;\n  letter-spacing: var(--boxel-lsp-xl);\n  text-transform: uppercase;\n  text-align: left;\n}\n\n.embedded-card__field .value {\n  font: var(--boxel-font-sm);\n}\n",
+          "isolated.css": "/* Base Styles */\n.isolated-card {\n  color: var(--ch-dark);\n  font: var(--boxel-font);\n  letter-spacing: var(--boxel-lsp);\n}\n\n\n/* Header */\n.isolated-card__header {\n  height: 270px;\n  max-width: 845px;\n  margin: 0 auto;\n  padding: 10px;\n  display: grid;\n  grid-template-columns: 270px 1fr;\n  align-items: center;\n  gap: 0 30px;\n  border-bottom: var(--boxel-border);\n}\n\n.isolated-card__label {\n  position: absolute;\n  top: 15px;\n  left: 20px;\n  color: var(--ch-light-op50);\n  font: var(--boxel-font-xs);\n  font-weight: 600;\n  letter-spacing: var(--boxel-lsp-xl);\n  text-transform: uppercase;\n}\n\n.isolated-card__img {\n  justify-self: center;\n  width: 150px;\n  height: 150px;\n  border-radius: 100px;\n  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg');\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n\n.isolated-card__title {\n  margin: 0;\n  font: var(--boxel-font-lg);\n  font-weight: 700;\n  letter-spacing: 0;\n}\n\n.isolated-card__description {\n  margin: 0;\n  color: var(--boxel-medium-light-purple);\n  font: inherit;\n  letter-spacing: inherit;\n}\n\n\n/* Section */\n.media-detail-section {\n  display: grid;\n  gap: 10px;\n  padding: 25px 0 60px;\n}\n\n.media-detail-section__contents {\n  padding: 0 50px;\n}\n\n\n/* Fields */\n.field {\n  display: grid;\n  grid-template-columns: 190px 450px;\n  gap: 30px;\n  padding: 10px;\n  max-width: 690px;\n  margin: 0 auto;\n}\n\n.label {\n  font: var(--boxel-font-sm);\n  font-weight: bold;\n  letter-spacing: var(--boxel-lsp-xl);\n  line-height: 22px;\n  text-transform: uppercase;\n  text-align: right;\n}\n\n.value {\n  max-width: 100%;\n  letter-spacing: var(--boxel-lsp-sm);\n}\n\n\n/* Field name-specific styles */\n.verifi-id-value {\n  word-wrap: break-word;\n}\n"
+        },
+        "csId": "participant",
+        "csTitle": "participant",
+        "csUpdated": "2020-09-18T17:16:04.611Z",
+        "email": "valentino@valsolanomusic.com",
+        "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/thumb/Valentino-Solano-233dfd189eae633af2d17e8e7934dacc.jpg",
+        "ipi": "00914256714",
+        "pro": "Global Music Rights",
+        "role": "Lyricist",
+        "title": "Valentino Solano",
+        "website": "http://www.valsolanomusic.com/"
+      },
+      "id": "http://localhost:3000/api/realms/default/cards/participant",
+      "meta": {
+        "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/participant"
+      },
+      "relationships": {
+        "csAdoptsFrom": {
+          "data": {
+            "id": "https://base.cardstack.com/public/cards/base",
+            "type": "cards"
+          }
+        }
       },
       "type": "cards"
     }
