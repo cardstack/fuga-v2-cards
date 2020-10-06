@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 module.exports = async function({ field, card }) {
   let foreignKey = await field.value('foreignKey');
   let foreignType = await field.value('foreignType');
