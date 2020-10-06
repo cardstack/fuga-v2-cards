@@ -1,188 +1,82 @@
 {
   "data": {
     "attributes": {
-      "csCreated": "2020-09-18T16:28:08.752Z",
+      "csCreated": "2020-10-06T21:18:45.033Z",
       "csFeatures": {
-        "embedded-css": "embedded.css",
-        "isolated-css": "isolated.css"
+        "embedded-css": "embedded.css"
       },
       "csFieldOrder": [
-        "title",
-        "img-url",
-        "role",
-        "ipi",
-        "pro",
-        "email",
-        "website",
-        "recordings"
+        "lyricist",
+        "composer"
       ],
       "csFieldSets": {
         "embedded": [
-          "email",
-          "title",
-          "img-url",
-          "website",
-          "role"
+          "lyricist",
+          "composer"
         ],
         "isolated": [
-          "ipi",
-          "pro",
-          "role",
-          "email",
-          "title",
-          "img-url",
-          "website",
-          "recordings"
+          "lyricist",
+          "composer"
         ]
       },
       "csFields": {
-        "email": {
+        "composer": {
           "attributes": {
             "csFieldArity": "singular",
             "csFields": {
             },
-            "csTitle": "Email"
+            "csTitle": "Composer"
           },
           "relationships": {
             "csAdoptsFrom": {
               "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
+                "id": "https://base.cardstack.com/public/cards/base",
                 "type": "cards"
               }
             }
           }
         },
-        "img-url": {
+        "lyricist": {
           "attributes": {
             "csFieldArity": "singular",
             "csFields": {
             },
-            "csTitle": "Image URL"
+            "csTitle": "Lyricist"
           },
           "relationships": {
             "csAdoptsFrom": {
               "data": {
-                "id": "https://base.cardstack.com/public/cards/image-reference-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "ipi": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "CAE/IPI #"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "pro": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "PRO"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "recordings": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "No. of Recordings"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "role": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "Role"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "title": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "Title"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
-        "website": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "Website"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/url-field",
+                "id": "https://base.cardstack.com/public/cards/base",
                 "type": "cards"
               }
             }
           }
         }
       },
-      "csId": "participant",
-      "csTitle": "Participant",
-      "csUpdated": "2020-09-24T21:31:13.049Z",
-      "email": "",
-      "img-url": "https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg",
-      "ipi": "",
-      "pro": "",
-      "role": "Description",
-      "title": "Name"
+      "csId": "writers",
+      "csTitle": "Writers",
+      "csUpdated": "2020-10-06T21:20:11.870Z"
     },
-    "id": "http://localhost:3000/api/realms/default/cards/participant",
+    "id": "http://localhost:3000/api/realms/default/cards/writers",
     "meta": {
-      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/participant"
+      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/writers"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
           "id": "https://base.cardstack.com/public/cards/base",
+          "type": "cards"
+        }
+      },
+      "composer": {
+        "data": {
+          "id": "http://localhost:3000/api/realms/default/cards/francesco-midina",
+          "type": "cards"
+        }
+      },
+      "lyricist": {
+        "data": {
+          "id": "http://localhost:3000/api/realms/default/cards/pia-midina",
           "type": "cards"
         }
       }
@@ -192,7 +86,7 @@
   "included": [
     {
       "attributes": {
-        "csCreated": "2020-09-24T21:31:13.123Z",
+        "csCreated": "2020-10-06T21:20:11.903Z",
         "csDescription": "This represents cards of any type",
         "csFeatures": {
           "embedded-css": "embedded.css",
@@ -209,7 +103,7 @@
           "@cardstack/hub": "*"
         },
         "csTitle": "Base Card",
-        "csUpdated": "2020-09-24T21:31:13.123Z"
+        "csUpdated": "2020-10-06T21:20:11.903Z"
       },
       "id": "https://base.cardstack.com/public/cards/base",
       "meta": {

@@ -1,0 +1,19 @@
+.field {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.label {
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.title-field {
+  border-top: none;
+}
+
+.lyricist-field {
+  padding-top: 0;
+}
