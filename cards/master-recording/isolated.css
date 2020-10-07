@@ -39,8 +39,6 @@
 
 .value {
   max-width: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 
@@ -172,11 +170,13 @@
 /* Field name-specific styles */
 .isolated-card--view-fields > .heading-field,
 .isolated-card--view-fields > .sub-heading-field,
-.isolated-card--view-fields > .header-image-field {
+.isolated-card--view-fields > .header-image-field,
+.isolated-card--view-fields > truncated-verifi-id-field {
   display: none;
 }
 
-.isolated-card--view-fields > .verifi-id-value {
+.isolated-card--view-fields > .verifi-id-field {
+  overflow-wrap: anywhere;
+  word-break: break-all;
   word-wrap: break-word;
 }
-

@@ -44,8 +44,6 @@
 
 .value {
   max-width: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .header-title-field,
@@ -121,4 +119,12 @@
 
 .isolated-card--small .label {
   text-align: left;
+}
+
+
+/* Field name-specific styles */
+.isolated-card--view-fields > .verifi-id-field {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  word-wrap: break-word;
 }
