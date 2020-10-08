@@ -7,7 +7,8 @@
       "cover-art": "https://cardstack.github.io/boxel/media-registry/covers/medium/Autumn-Leaves-609809715b3077a40277ba64eb37d81a.jpg",
       "csCreated": "2020-08-03T15:38:30.625Z",
       "csFeatures": {
-        "isolated-css": "isolated.css"
+        "isolated-css": "isolated.css",
+        "embedded-css": "embedded.css"
       },
       "csFieldOrder": [
         "heading",
@@ -37,8 +38,9 @@
       ],
       "csFieldSets": {
         "embedded": [
-          "title",
-          "cover-art"
+          "heading",
+          "sub-heading",
+          "header-image"
         ],
         "isolated": [
           "isrc",
@@ -49,6 +51,7 @@
           "heading",
           "duration",
           "language",
+          "producer",
           "copyright",
           "cover-art",
           "verifi-id",
@@ -63,8 +66,7 @@
           "parental-advisory",
           "mastering-engineer",
           "recording-engineer",
-          "truncated-verifi-id",
-          "producer"
+          "truncated-verifi-id"
         ]
       },
       "csFields": {
@@ -457,7 +459,7 @@
       },
       "csId": "master-recording",
       "csTitle": "Master Recording",
-      "csUpdated": "2020-10-06T22:14:29.425Z",
+      "csUpdated": "2020-10-07T17:06:39.560Z",
       "duration": "3:23",
       "genre": "Alternative",
       "header-image": "https://cardstack.github.io/boxel/media-registry/covers/medium/Autumn-Leaves-609809715b3077a40277ba64eb37d81a.jpg",
@@ -511,7 +513,7 @@
   "included": [
     {
       "attributes": {
-        "csCreated": "2020-10-06T22:14:29.878Z",
+        "csCreated": "2020-10-07T17:06:40.059Z",
         "csDescription": "This represents cards of any type",
         "csFeatures": {
           "embedded-css": "embedded.css",
@@ -528,7 +530,7 @@
           "@cardstack/hub": "*"
         },
         "csTitle": "Base Card",
-        "csUpdated": "2020-10-06T22:14:29.878Z"
+        "csUpdated": "2020-10-07T17:06:40.059Z"
       },
       "id": "https://base.cardstack.com/public/cards/base",
       "meta": {

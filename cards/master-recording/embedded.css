@@ -1,0 +1,68 @@
+/* This is the embedded master-recording card template. All master-recording cards will inherit this CSS if
+no custom CSS is provided for the card.*/
+
+.embedded-card {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background-color: #fff;
+  color: black;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: calc(22/16);
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+.embedded-card--view-fields {
+  display: grid;
+  grid-template:
+    "img"   auto
+    "title" auto
+    "sub"   auto / auto;
+  padding: 20px;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.label {
+  display: none;
+}
+
+.header-image-field {
+  grid-area: img;
+  width: 182px;
+  height: 182px;
+}
+
+.header-image-field > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading-field {
+  grid-area: title;
+}
+
+.heading-value {
+  padding-top: 9px;
+  padding-bottom: 3px;
+}
+
+.sub-heading-field {
+  grid-area: sub;
+}
+
+.sub-heading-value {
+  color: #6B6A80;
+  font-size: 13px;
+  line-height: calc(18/13);
+}
