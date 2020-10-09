@@ -57,7 +57,7 @@
       "csTitle": "Writers",
       "csUpdated": "2020-10-06T21:20:11.870Z"
     },
-    "id": "http://localhost:3000/api/realms/default/cards/writers",
+    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/writers",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/writers"
     },
@@ -70,13 +70,13 @@
       },
       "composer": {
         "data": {
-          "id": "http://localhost:3000/api/realms/default/cards/francesco-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/francesco-midina",
           "type": "cards"
         }
       },
       "lyricist": {
         "data": {
-          "id": "http://localhost:3000/api/realms/default/cards/pia-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
           "type": "cards"
         }
       }

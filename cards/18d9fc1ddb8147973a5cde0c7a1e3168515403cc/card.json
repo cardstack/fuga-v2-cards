@@ -11,14 +11,14 @@
       "csUpdated": "2020-09-18T23:16:54.875Z",
       "title": "Fearless "
     },
-    "id": "http://localhost:3000/api/realms/default/cards/18d9fc1ddb8147973a5cde0c7a1e3168515403cc",
+    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/18d9fc1ddb8147973a5cde0c7a1e3168515403cc",
     "meta": {
       "cardDir": "/Users/alex/cardstack/fuga-v2-cards/cards/18d9fc1ddb8147973a5cde0c7a1e3168515403cc"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "http://localhost:3000/api/realms/default/cards/musical-work",
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/musical-work",
           "type": "cards"
         }
       }
@@ -89,13 +89,13 @@
               "foreignKey": "musicalWork",
               "foreignType": {
                 "csId": "master-recording",
-                "csRealm": "http://localhost:3000/api/realms/default"
+                "csRealm": "https://builder-hub.stack.cards/api/realms/verifi"
               }
             },
             "relationships": {
               "csAdoptsFrom": {
                 "data": {
-                  "id": "http://localhost:3000/api/realms/default/cards/has-many",
+                  "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/has-many",
                   "type": "cards"
                 }
               }
@@ -125,7 +125,7 @@
         "csUpdated": "2020-09-18T13:41:24.276Z",
         "title": "asdf - sdf"
       },
-      "id": "http://localhost:3000/api/realms/default/cards/musical-work",
+      "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/musical-work",
       "meta": {
         "cardDir": "/Users/alex/cardstack/fuga-v2-cards/cards/musical-work"
       },

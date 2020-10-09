@@ -478,14 +478,14 @@
       "truncated-verifi-id": "0x9b21...ca26",
       "verifi-id": "0x9b2138a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74ca26"
     },
-    "id": "http://localhost:3000/api/realms/default/cards/master-recording",
+    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/master-recording"
     },
     "relationships": {
       "artist": {
         "data": {
-          "id": "http://localhost:3000/api/realms/default/cards/pia-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
           "type": "cards"
         }
       },
@@ -497,13 +497,13 @@
       },
       "musical-work": {
         "data": {
-          "id": "http://localhost:3000/api/realms/default/cards/musical-work",
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/musical-work",
           "type": "cards"
         }
       },
       "producer": {
         "data": {
-          "id": "http://localhost:3000/api/realms/default/cards/francesco-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/francesco-midina",
           "type": "cards"
         }
       }
@@ -808,7 +808,7 @@
         "verifi-id": "0x8a4532b7c27d6ca5d8bd3201fa7c28071221165dc2f1b4528c22e2809d89ab18",
         "version-type": "Original Work"
       },
-      "id": "http://localhost:3000/api/realms/default/cards/musical-work",
+      "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/musical-work",
       "meta": {
         "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/musical-work"
       },
@@ -821,7 +821,7 @@
         },
         "writers": {
           "data": {
-            "id": "http://localhost:3000/api/realms/default/cards/writers",
+            "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/writers",
             "type": "cards"
           }
         }
@@ -857,14 +857,14 @@
         "title": "Francesco Midina",
         "website": "https://www.francesco.rocks"
       },
-      "id": "http://localhost:3000/api/realms/default/cards/francesco-midina",
+      "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/francesco-midina",
       "meta": {
         "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/francesco-midina"
       },
       "relationships": {
         "csAdoptsFrom": {
           "data": {
-            "id": "http://localhost:3000/api/realms/default/cards/participant",
+            "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
             "type": "cards"
           }
         }
@@ -900,14 +900,14 @@
         "title": "Pia Midina",
         "website": "https://www.piamidina.com"
       },
-      "id": "http://localhost:3000/api/realms/default/cards/pia-midina",
+      "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
       "meta": {
         "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/pia-midina"
       },
       "relationships": {
         "csAdoptsFrom": {
           "data": {
-            "id": "http://localhost:3000/api/realms/default/cards/participant",
+            "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
             "type": "cards"
           }
         }
@@ -975,14 +975,14 @@
         "csTitle": "Writers",
         "csUpdated": "2020-10-06T21:20:11.870Z"
       },
-      "id": "http://localhost:3000/api/realms/default/cards/writers",
+      "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/writers",
       "meta": {
         "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/writers"
       },
       "relationships": {
         "composer": {
           "data": {
-            "id": "http://localhost:3000/api/realms/default/cards/francesco-midina",
+            "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/francesco-midina",
             "type": "cards"
           }
         },
@@ -994,7 +994,7 @@
         },
         "lyricist": {
           "data": {
-            "id": "http://localhost:3000/api/realms/default/cards/pia-midina",
+            "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
             "type": "cards"
           }
         }
@@ -1181,7 +1181,7 @@
         "role": "Description",
         "title": "Name"
       },
-      "id": "http://localhost:3000/api/realms/default/cards/participant",
+      "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
       "meta": {
         "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/participant"
       },

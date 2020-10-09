@@ -34,14 +34,14 @@
       "role": "Composer",
       "title": "Miles Ponia"
     },
-    "id": "http://localhost:3000/api/realms/default/cards/miles-ponia",
+    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/miles-ponia",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/miles-ponia"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "http://localhost:3000/api/realms/default/cards/participant",
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
           "type": "cards"
         }
       }
@@ -229,7 +229,7 @@
         "role": "Description",
         "title": "Name"
       },
-      "id": "http://localhost:3000/api/realms/default/cards/participant",
+      "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
       "meta": {
         "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/participant"
       },
