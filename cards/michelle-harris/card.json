@@ -14,21 +14,21 @@
       ],
       "csFields": {
       },
-      "csId": "pia-midina",
-      "csTitle": "pia-midina",
+      "csId": "michelle-harris",
+      "csTitle": "Participant",
       "csUpdated": "2020-09-23T22:21:51.615Z",
-      "email": "pia.midina@gmail.com",
-      "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/Pia-Midina-d0666ed3d57f7e3dd19484eeb17068f0.jpg",
-      "ipi": "00618723194",
+      "email": "michelle@musicbymichelle.com",
+      "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/Michelle-Harris-1fed8a6084425ba1255c8259a8345a53.jpg",
+      "ipi": "00618722178",
       "pro": "SOMOA",
-      "recordings": "17",
-      "role": "Recording artist & lyricist",
-      "title": "Pia Midina",
-      "website": "www.piamidina.com"
+      "recordings": "353",
+      "role": "Producer (Music by Michelle)",
+      "title": "Michelle Harris",
+      "website": "www.musicbymichelle.com"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
+    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/michelle-harris",
     "meta": {
-      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/pia-midina"
+      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/michelle-harris"
     },
     "relationships": {
       "csAdoptsFrom": {

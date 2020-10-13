@@ -14,21 +14,21 @@
       ],
       "csFields": {
       },
-      "csId": "pia-midina",
-      "csTitle": "pia-midina",
+      "csId": "bb-clarke",
+      "csTitle": "Participant",
       "csUpdated": "2020-09-23T22:21:51.615Z",
-      "email": "pia.midina@gmail.com",
-      "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/Pia-Midina-d0666ed3d57f7e3dd19484eeb17068f0.jpg",
-      "ipi": "00618723194",
+      "email": "bb.clarke@gmail.com",
+      "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/BB-Clarke-a76b453951f93eb96398fa5621669340.jpg",
+      "ipi": "00618722178",
       "pro": "SOMOA",
-      "recordings": "17",
+      "recordings": "7",
       "role": "Recording artist & lyricist",
-      "title": "Pia Midina",
-      "website": "www.piamidina.com"
+      "title": "BB Clarke",
+      "website": "www.bbclarke.com"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
+    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/bb-clarke",
     "meta": {
-      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/pia-midina"
+      "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/bb-clarke"
     },
     "relationships": {
       "csAdoptsFrom": {

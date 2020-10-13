@@ -158,7 +158,7 @@
           "relationships": {
             "csAdoptsFrom": {
               "data": {
-                "id": "https://base.cardstack.com/public/cards/url-field",
+                "id": "https://base.cardstack.com/public/cards/string-field",
                 "type": "cards"
               }
             }
@@ -168,12 +168,13 @@
       "csId": "participant",
       "csTitle": "Participant",
       "csUpdated": "2020-09-24T21:31:13.049Z",
-      "email": "",
+      "email": "N/A",
       "img-url": "https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg",
-      "ipi": "",
-      "pro": "",
+      "ipi": "N/A",
+      "pro": "N/A",
       "role": "Description",
-      "title": "Name"
+      "title": "Name",
+      "website": "N/A"
     },
     "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
     "relationships": {

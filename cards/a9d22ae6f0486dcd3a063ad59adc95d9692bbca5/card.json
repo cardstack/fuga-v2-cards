@@ -1,15 +1,16 @@
 {
   "data": {
     "attributes": {
-      "background-singer": null,
+      "background-singer": "N/A",
       "catalog-no": "BRN-30305-4019281",
       "copyright": "℗ 2019 Bunny Records",
-      "cover-art": "https://cardstack.github.io/boxel/media-registry/covers/medium/Sunlight-26966f0055adff13c228daa5cd9c2787.jpg",
+      "cover-art": "https://cardstack.github.io/boxel/media-registry/covers/medium/Animals-4caf1dff67ebc192b4a194b551bc8274.jpg",
       "csCreated": "2020-10-06T21:44:12.934Z",
       "csFieldOrder": [
         "heading",
         "sub-heading",
         "header-image",
+        "section-heading",
         "title",
         "artist",
         "label",
@@ -20,12 +21,18 @@
         "release-date",
         "parental-advisory",
         "copyright",
-        "verifi-id",
+        "section-heading-2",
         "musical-work",
+        "section-heading-3",
+        "verifi-id",
         "truncated-verifi-id",
+        "section-heading-4",
         "cover-art",
+        "section-heading-5",
         "isrc",
         "catalog-no",
+        "section-heading-6",
+        "artist",
         "producer",
         "mastering-engineer",
         "mixing-engineer",
@@ -39,7 +46,7 @@
       "csUpdated": "2020-10-06T21:56:14.251Z",
       "duration": "3:03",
       "genre": "Rock",
-      "header-image": "https://cardstack.github.io/boxel/media-registry/covers/medium/Sunlight-26966f0055adff13c228daa5cd9c2787.jpg",
+      "header-image": "https://cardstack.github.io/boxel/media-registry/covers/medium/Animals-4caf1dff67ebc192b4a194b551bc8274.jpg",
       "heading": "Baby Boy",
       "isrc": "US-S1Z-17-34980",
       "label": "Bunny Records",
@@ -50,6 +57,12 @@
       "recording-date": "2019-03-27",
       "recording-engineer": "Faith Gellar",
       "release-date": "2019-05-08",
+      "section-heading": "Master Details",
+      "section-heading-2": "Musical Work",
+      "section-heading-3": "Registrations",
+      "section-heading-4": "Files",
+      "section-heading-5": "Codes",
+      "section-heading-6": "Credits",
       "sub-heading": "BB Clarke",
       "title": "Baby Boy",
       "truncated-verifi-id": "0x56cd...ab34",
@@ -60,9 +73,21 @@
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/a9d22ae6f0486dcd3a063ad59adc95d9692bbca5"
     },
     "relationships": {
+      "artist": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/bb-clarke",
+          "type": "cards"
+        }
+      },
       "csAdoptsFrom": {
         "data": {
           "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording",
+          "type": "cards"
+        }
+      },
+      "producer": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/michelle-harris",
           "type": "cards"
         }
       }
