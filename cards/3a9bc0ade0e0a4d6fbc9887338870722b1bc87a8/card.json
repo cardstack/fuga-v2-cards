@@ -55,7 +55,7 @@
       "truncated-verifi-id": "0x125b...36e8",
       "verifi-id": "0x125b38a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b7436e8"
     },
-    "id": "http://localhost:3000/api/realms/default/cards/3a9bc0ade0e0a4d6fbc9887338870722b1bc87a8",
+    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/3a9bc0ade0e0a4d6fbc9887338870722b1bc87a8",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/3a9bc0ade0e0a4d6fbc9887338870722b1bc87a8"
     },
@@ -69,12 +69,6 @@
       "csAdoptsFrom": {
         "data": {
           "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording",
-          "type": "cards"
-        }
-      },
-      "musical-work": {
-        "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/1594830cff5d194c3753cece049e44636e2d60aa",
           "type": "cards"
         }
       },
