@@ -14,6 +14,7 @@
         "heading",
         "sub-heading",
         "header-image",
+        "master-details-section",
         "title",
         "artist",
         "label",
@@ -46,6 +47,7 @@
           "isrc",
           "genre",
           "label",
+          "master-details-section",
           "title",
           "artist",
           "heading",
@@ -146,6 +148,22 @@
             "csAdoptsFrom": {
               "data": {
                 "id": "https://base.cardstack.com/public/cards/image-reference-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "master-details-section": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Section 1"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
                 "type": "cards"
               }
             }
@@ -468,6 +486,7 @@
       "label": "Bunny Records",
       "language": "English (en_US)",
       "mastering-engineer": "Joel Kaplan",
+      "master-details-section": "Master Details",
       "mixing-engineer": "Mariah Solis",
       "parental-advisory": false,
       "recording-date": "2020-01-16",
