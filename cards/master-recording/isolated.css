@@ -41,6 +41,10 @@
   max-width: 100%;
 }
 
+.isolated-card-label {
+  color: #fff;
+}
+
 
 /* Header */
 .isolated-card__header {
