@@ -1,0 +1,207 @@
+/* This is the isolated master-recording card template. All master-recording cards will inherit this CSS if no custom CSS is provided for the card. */
+
+.isolated-card {
+  margin: 0 auto;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: calc(22/16);
+  letter-spacing: 0.015em;
+}
+
+.isolated-card--view-fields {
+  display: grid;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 2fr 4.5fr;
+  gap: 30px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: calc(22/13);
+  text-transform: uppercase;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.value {
+  max-width: 100%;
+}
+
+.isolated-card-label {
+  color: #fff;
+}
+
+
+/* Header */
+.isolated-card__header {
+  background-color: var(--boxel-light-purple);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.isolated-card__header-content {
+  max-width: 100%;
+  max-height: 370px;
+  padding: 60px 30px 50px 70px;
+  display: grid;
+  grid-template:
+    "img title"   2fr
+    "img desc"    1fr
+    "img details" 1fr / minmax(160px, 260px) 1fr;
+  gap: 0 30px;
+  backdrop-filter: brightness(0.75) blur(50px) contrast(1.2);
+}
+
+.isolated-card__header-content.no-bg {
+  backdrop-filter: brightness(0.4);
+}
+
+.isolated-card__img {
+  grid-area: img;
+  align-self: center;
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/album_art-d1fcf1d7166e3a6a73cc4651ad0f6267.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* .isolated-card__play-btn {
+  --icon-color: rgba(0, 0, 0, 0.5);
+  --icon-border: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+.isolated-card__title {
+  grid-area: title;
+  align-self: end;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: calc(43/32);
+  letter-spacing: 0;
+}
+
+.isolated-card__description {
+  grid-area: desc;
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+
+/* Header detail fields */
+.isolated-card__header-details {
+  grid-area: details;
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.isolated-card__header-field .field {
+  grid-template-columns: auto;
+  gap: 3px;
+  padding: 0;
+  justify-items: start;
+  white-space: nowrap;
+}
+
+.isolated-card__header-field .label {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: calc(15/11);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.isolated-card__header-field .value {
+  font-size: 13px;
+  line-height: calc(18/13);
+  letter-spacing: 0.025em;
+}
+
+
+/* Field name-specific styles */
+.isolated-card--view-fields > .heading-field,
+.isolated-card--view-fields > .sub-heading-field,
+.isolated-card--view-fields > .header-image-field,
+.isolated-card--view-fields > .truncated-verifi-id-field {
+  display: none;
+}
+
+.isolated-card--view-fields > .verifi-id-field {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+
+/* Section field styles */
+.isolated-card--view-fields > .section-heading-field > .section-heading-label,
+.isolated-card--view-fields > .section-heading-2-field > .section-heading-2-label,
+.isolated-card--view-fields > .section-heading-3-field > .section-heading-3-label,
+.isolated-card--view-fields > .section-heading-4-field > .section-heading-4-label,
+.isolated-card--view-fields > .section-heading-5-field > .section-heading-5-label,
+.isolated-card--view-fields > .section-heading-6-field > .section-heading-6-label {
+  display: none;
+}
+
+.isolated-card--view-fields > .section-heading-field > .section-heading-value,
+.isolated-card--view-fields > .section-heading-2-field > .section-heading-2-value,
+.isolated-card--view-fields > .section-heading-3-field > .section-heading-3-value,
+.isolated-card--view-fields > .section-heading-4-field > .section-heading-4-value,
+.isolated-card--view-fields > .section-heading-5-field > .section-heading-5-value,
+.isolated-card--view-fields > .section-heading-6-field > .section-heading-6-value {
+  grid-column: -1 / 1;
+}
+
+.isolated-card--view-fields > .section-heading-field,
+.isolated-card--view-fields > .section-heading-2-field,
+.isolated-card--view-fields > .section-heading-3-field,
+.isolated-card--view-fields > .section-heading-4-field,
+.isolated-card--view-fields > .section-heading-5-field,
+.isolated-card--view-fields > .section-heading-6-field {
+  max-width: 100%;
+  margin-top: 40px;
+  padding-top: 25px;
+  padding-left: 45px;
+  border-top: 1px solid #dedede;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: calc(24/18);
+  letter-spacing: 0;
+}
+
+.isolated-card--view-fields > .section-heading-field {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}

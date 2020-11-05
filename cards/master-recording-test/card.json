@@ -1,0 +1,81 @@
+{
+  "data": {
+    "attributes": {
+      "csId": "master-recording-test",
+      "csTitle": "Master Recording Test",
+      "csUpdated": "2020-10-13T17:14:32.589Z",
+      "duration": "3:23",
+      "genre": "Alternative",
+      "header-image": "https://cardstack.github.io/boxel/media-registry/covers/medium/Autumn-Leaves-609809715b3077a40277ba64eb37d81a.jpg",
+      "heading": "The Leaves Are Changing Color",
+      "isrc": "US-S1Z-20-05001",
+      "label": "Bunny Records",
+      "language": "English (en_US)",
+      "section-heading": "Master Details",
+      "section-heading-2": "Musical Work",
+      "section-heading-3": "Registrations",
+      "section-heading-4": "Files",
+      "section-heading-5": "Codes",
+      "section-heading-6": "Credits",
+      "mastering-engineer": "Joel Kaplan",
+      "mixing-engineer": "Mariah Solis",
+      "parental-advisory": false,
+      "recording-date": "2020-01-16",
+      "recording-engineer": "Ian Adams",
+      "release-date": "2020-03-02",
+      "sub-heading": "Pia Midina",
+      "title": "The Leaves Are Changing Color",
+      "truncated-verifi-id": "0x9b21...ca26",
+      "verifi-id": "0x9b2138a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74ca26",
+      "artist": [
+        {
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
+          "attributes": {
+            "email": "pia.midina@gmail.com",
+            "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/Pia-Midina-d0666ed3d57f7e3dd19484eeb17068f0.jpg",
+            "ipi": "00618723194",
+            "pro": "SOMOA",
+            "recordings": "17",
+            "role": "Recordingartist&lyricist",
+            "title": "PiaMidina",
+            "website": "www.piamidina.com"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
+                "type": "cards"
+              }
+            }
+          },
+          "type": "cards"
+        }
+      ]
+    },
+    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording-test",
+    "meta": {
+      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/master-recording-test"
+    },
+    "relationships": {
+      "csAdoptsFrom": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording-template",
+          "type": "cards"
+        }
+      },
+      "musical-work": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/musical-work",
+          "type": "cards"
+        }
+      },
+      "producer": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/francesco-midina",
+          "type": "cards"
+        }
+      }
+    },
+    "type": "cards"
+  }
+}
