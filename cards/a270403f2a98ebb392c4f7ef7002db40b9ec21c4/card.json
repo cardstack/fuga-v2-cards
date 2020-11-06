@@ -68,32 +68,32 @@
       "truncated-verifi-id": "0x12ab...45cd",
       "verifi-id": "0x12ab38a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b7445cd"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/a270403f2a98ebb392c4f7ef7002db40b9ec21c4",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/a270403f2a98ebb392c4f7ef7002db40b9ec21c4",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/a270403f2a98ebb392c4f7ef7002db40b9ec21c4"
     },
     "relationships": {
       "artist": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/pia-midina",
           "type": "cards"
         }
       },
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording",
           "type": "cards"
         }
       },
       "musical-work": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/8a68f48cfa6c5cd454f22769f8c64483ba5cc262",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/8a68f48cfa6c5cd454f22769f8c64483ba5cc262",
           "type": "cards"
         }
       },
       "producer": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/francesco-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/francesco-midina",
           "type": "cards"
         }
       }

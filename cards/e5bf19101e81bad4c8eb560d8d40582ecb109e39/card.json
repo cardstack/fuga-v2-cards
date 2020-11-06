@@ -68,26 +68,26 @@
       "truncated-verifi-id": "0xb2f5...50a7",
       "verifi-id": "0xb2f538a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b7450a7"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/e5bf19101e81bad4c8eb560d8d40582ecb109e39",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/e5bf19101e81bad4c8eb560d8d40582ecb109e39",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/e5bf19101e81bad4c8eb560d8d40582ecb109e39"
     },
     "relationships": {
       "artist": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/bb-clarke",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/bb-clarke",
           "type": "cards"
         }
       },
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording",
           "type": "cards"
         }
       },
       "producer": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/michelle-harris",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/michelle-harris",
           "type": "cards"
         }
       }

@@ -21,7 +21,7 @@
         "compute.js": "module.exports = async function({ field, card }) {\n  let foreignKey = await field.value('foreignKey');\n  let foreignType = await field.value('foreignType');\n  try {\n    let found = await card.reader.search({\n      filter: {\n        type: foreignType,\n        eq: {\n         [foreignKey + '.csId']:  card.csId,\n         [foreignKey + '.csRealm']:  card.csRealm,\n         [foreignKey + '.csOriginalRealm']:  card.csOriginalRealm\n        },\n      },\n    });\n    return { value: found.cards };\n  } catch (err) {\n    return { value: [] };\n  }\n}\n"
       }
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/has-many",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/has-many",
     "meta": {
     },
     "relationships": {

@@ -30,20 +30,20 @@
       "verifi-id": "0x2ef332b7c27d6ca5d8bd3201fa7c28071221165dc2f1b4528c22e2809d8945ca",
       "version-type": "Original work"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/8a68f48cfa6c5cd454f22769f8c64483ba5cc262",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/8a68f48cfa6c5cd454f22769f8c64483ba5cc262",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/8a68f48cfa6c5cd454f22769f8c64483ba5cc262"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/musical-work",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/musical-work",
           "type": "cards"
         }
       },
       "writers": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/writers",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/writers",
           "type": "cards"
         }
       }

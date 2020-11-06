@@ -10,20 +10,20 @@
       "csTitle": "Fearless Studio version",
       "csUpdated": "2020-09-18T23:18:35.170Z"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/7d54e5da40b3abfd3a9b7b37172d2ceb18b22e1d",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/7d54e5da40b3abfd3a9b7b37172d2ceb18b22e1d",
     "meta": {
       "cardDir": "/Users/alex/cardstack/fuga-v2-cards/cards/7d54e5da40b3abfd3a9b7b37172d2ceb18b22e1d"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording",
           "type": "cards"
         }
       },
       "musicalWork": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/18d9fc1ddb8147973a5cde0c7a1e3168515403cc",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/18d9fc1ddb8147973a5cde0c7a1e3168515403cc",
           "type": "cards"
         }
       }

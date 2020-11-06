@@ -68,26 +68,26 @@
       "truncated-verifi-id": "0x32fe...a67b",
       "verifi-id": "0x32fe38a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74a67b"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/37d348c4eca688ad0d968220266e1fd280cf0707",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/37d348c4eca688ad0d968220266e1fd280cf0707",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/37d348c4eca688ad0d968220266e1fd280cf0707"
     },
     "relationships": {
       "artist": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/pia-midina",
           "type": "cards"
         }
       },
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording",
           "type": "cards"
         }
       },
       "producer": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/francesco-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/francesco-midina",
           "type": "cards"
         }
       }

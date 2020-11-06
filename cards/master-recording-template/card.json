@@ -600,7 +600,10 @@
       "csTitle": "Master Recording Template",
       "csUpdated": "2020-10-13T17:14:32.589Z"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording-template",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording-template",
+    "meta": {
+      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/master-recording-template"
+    },
     "relationships": {
       "csAdoptsFrom": {
         "data": {

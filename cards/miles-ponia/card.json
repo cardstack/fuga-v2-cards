@@ -35,14 +35,14 @@
       "title": "Miles Ponia",
       "website": "N/A"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/miles-ponia",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/miles-ponia",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/miles-ponia"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
           "type": "cards"
         }
       }

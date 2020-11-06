@@ -263,7 +263,7 @@
       "verifi-id": "0x8a4532b7c27d6ca5d8bd3201fa7c28071221165dc2f1b4528c22e2809d89ab18",
       "version-type": "Original Work"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/musical-work",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/musical-work",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/musical-work"
     },
@@ -276,7 +276,7 @@
       },
       "writers": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/writers",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/writers",
           "type": "cards"
         }
       }

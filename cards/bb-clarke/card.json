@@ -26,14 +26,14 @@
       "title": "BB Clarke",
       "website": "www.bbclarke.com"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/bb-clarke",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/bb-clarke",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/bb-clarke"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
           "type": "cards"
         }
       }

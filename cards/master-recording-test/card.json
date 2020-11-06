@@ -29,21 +29,22 @@
       "verifi-id": "0x9b2138a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74ca26",
       "artist": [
         {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/pia-midina",
           "attributes": {
+            "csTitle": "Participant",
             "email": "pia.midina@gmail.com",
             "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/Pia-Midina-d0666ed3d57f7e3dd19484eeb17068f0.jpg",
             "ipi": "00618723194",
             "pro": "SOMOA",
             "recordings": "17",
-            "role": "Recordingartist&lyricist",
-            "title": "PiaMidina",
+            "role": "Recording artist & lyricist",
+            "title": "Pia Midina",
             "website": "www.piamidina.com"
           },
           "relationships": {
             "csAdoptsFrom": {
               "data": {
-                "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
+                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
                 "type": "cards"
               }
             }
@@ -52,26 +53,26 @@
         }
       ]
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording-test",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording-test",
     "meta": {
       "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/master-recording-test"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/master-recording-template",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording-template",
           "type": "cards"
         }
       },
       "musical-work": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/musical-work",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/musical-work",
           "type": "cards"
         }
       },
       "producer": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/francesco-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/francesco-midina",
           "type": "cards"
         }
       }

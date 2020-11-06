@@ -26,14 +26,14 @@
       "title": "Pia Midina",
       "website": "www.piamidina.com"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/pia-midina",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/pia-midina",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/pia-midina"
     },
     "relationships": {
       "csAdoptsFrom": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/verifi/cards/participant",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
           "type": "cards"
         }
       }
