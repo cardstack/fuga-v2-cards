@@ -31,6 +31,7 @@
         {
           "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/pia-midina",
           "attributes": {
+            "csId": "pia-midina",
             "csTitle": "Participant",
             "email": "pia.midina@gmail.com",
             "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/Pia-Midina-d0666ed3d57f7e3dd19484eeb17068f0.jpg",
@@ -45,6 +46,184 @@
             "csAdoptsFrom": {
               "data": {
                 "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
+                "type": "cards"
+              }
+            }
+          },
+          "type": "cards"
+        },
+        {
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/francesco-midina",
+          "attributes": {
+            "csId": "francesco-midina",
+            "csTitle": "Participant",
+            "csUpdated": "2020-10-06T21:17:38.168Z",
+            "email": "francesco.midina@rocks.com",
+            "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/francesco-midina-59cd18c164876b32098ace0d199437f0.jpg",
+            "ipi": "N/A",
+            "pro": "N/A",
+            "recordings": "168",
+            "role": "Producer (Francesco Rocks)",
+            "title": "Francesco Midina",
+            "website": "www.francesco.rocks"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
+                "type": "cards"
+              }
+            }
+          },
+          "type": "cards"
+        }
+      ],
+      "writers": [
+        {
+          "attributes": {
+            "csTitle": "Publishing Representation",
+            "csFieldOrder": [
+              "writer",
+              "role",
+              "publisher"
+            ],
+            "csFieldSets": {
+              "embedded": [
+                "writer",
+                "role",
+                "publisher"
+              ]
+            },
+            "csFields": {
+              "writer": {
+                "attributes": {
+                  "csFieldArity": "singular",
+                  "csFields": {
+                  },
+                  "csTitle": "Writer"
+                },
+                "relationships": {
+                  "csAdoptsFrom": {
+                    "data": {
+                      "id": "https://base.cardstack.com/public/cards/base",
+                      "type": "cards"
+                    }
+                  }
+                }
+              },
+              "role": {
+                "attributes": {
+                  "csFieldArity": "singular",
+                  "csFields": {
+                  },
+                  "csTitle": "Role"
+                },
+                "relationships": {
+                  "csAdoptsFrom": {
+                    "data": {
+                      "id": "https://base.cardstack.com/public/cards/string-field",
+                      "type": "cards"
+                    }
+                  }
+                }
+              },
+              "publisher": {
+                "attributes": {
+                  "csFieldArity": "singular",
+                  "csFields": {
+                  },
+                  "csTitle": "Publisher"
+                },
+                "relationships": {
+                  "csAdoptsFrom": {
+                    "data": {
+                      "id": "https://base.cardstack.com/public/cards/base",
+                      "type": "cards"
+                    }
+                  }
+                }
+              }
+            },
+            "role": "Lyricist",
+            "publisher": {
+              "attributes": {
+                "csTitle": "Territory",
+                "csFieldSets": {
+                  "embedded": [
+                    "title",
+                    "publisher"
+                  ]
+                },
+                "csFields": {
+                  "title": {
+                    "attributes": {
+                      "csFieldArity": "singular",
+                      "csFields": {
+                      }
+                    },
+                    "relationships": {
+                      "csAdoptsFrom": {
+                        "data": {
+                          "id": "https://base.cardstack.com/public/cards/string-field",
+                          "type": "cards"
+                        }
+                      }
+                    }
+                  },
+                  "publisher": {
+                    "attributes": {
+                      "csFieldArity": "singular",
+                      "csFields": {
+                      }
+                    },
+                    "relationships": {
+                      "csAdoptsFrom": {
+                        "data": {
+                          "id": "https://base.cardstack.com/public/cards/base",
+                          "type": "cards"
+                        }
+                      }
+                    }
+                  }
+                },
+                "title": "Worldwide",
+                "publisher": {
+                  "attributes": {
+                    "csTitle": "Publisher",
+                    "csFields": {
+                    }
+                  },
+                  "relationships": {
+                    "csAdoptsFrom": {
+                      "data": {
+                        "id": "https://base.cardstack.com/public/cards/base",
+                        "type": "cards"
+                      }
+                    }
+                  }
+                }
+              },
+              "relationships": {
+                "csAdoptsFrom": {
+                  "data": {
+                    "id": "https://base.cardstack.com/public/cards/base",
+                    "type": "cards"
+                  }
+                }
+              },
+              "type": "cards"
+            }
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/base",
+                "type": "cards"
+              }
+            },
+            "writer": {
+              "data": {
+                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/pia-midina",
                 "type": "cards"
               }
             }
@@ -71,10 +250,16 @@
         }
       },
       "producer": {
-        "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/francesco-midina",
-          "type": "cards"
-        }
+        "data": [
+          {
+            "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/francesco-midina",
+            "type": "cards"
+          },
+          {
+            "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/miles-ponia",
+            "type": "cards"
+          }
+        ]
       }
     },
     "type": "cards"
