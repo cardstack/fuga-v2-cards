@@ -1,0 +1,138 @@
+{
+  "data": {
+    "attributes": {
+      "csFieldSets": {
+        "embedded": [
+          "title"
+        ],
+        "isolated": [
+          "artist",
+          "producer",
+          "title",
+          "cover-art",
+          "names",
+          "musical-work"
+        ]
+      },
+      "csFields": {
+        "title": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Names"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "names": {
+          "attributes": {
+            "csFieldArity": "plural",
+            "csFields": {
+            },
+            "csTitle": "Title"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "cover-art": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+              
+            },
+            "csTitle": "Cover Art"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/base",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "artist": {
+          "attributes": {
+            "csFieldArity": "plural",
+            "csFields": {
+              
+            },
+            "csId": "participant",
+            "csTitle": "Artists"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/base",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "producer": {
+          "attributes": {
+            "csFieldArity": "plural",
+            "csFields": {
+
+            },
+            "csTitle": "Producers"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/base",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "musical-work": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+              
+            },
+            "csId": "musical-work",
+            "csTitle": "Musical Work"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/base",
+                "type": "cards"
+              }
+            }
+          }
+        }
+      },
+      "csId": "cards-test-template",
+      "csTitle": "Cards Test Template"
+    },
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/cards-test-template",
+    "meta": {
+      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/cards-test-template"
+    },
+    "relationships": {
+      "csAdoptsFrom": {
+        "data": {
+          "id": "https://base.cardstack.com/public/cards/base",
+          "type": "cards"
+        }
+      }
+    },
+    "type": "cards"
+  }
+}
