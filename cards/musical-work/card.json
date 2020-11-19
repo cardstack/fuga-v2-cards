@@ -37,10 +37,34 @@
           "header-title",
           "version-type",
           "header-description",
-          "writers"
+          "writers",
+          "related-recordings"
         ]
       },
       "csFields": {
+        "related-recordings": {
+          "attributes": {
+            "csFieldArity": "plural",
+            "csFields": {
+            },
+            "csTitle": "Related Recordings",
+            "foreignKey": "musical-work"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "http://localhost:3000/api/realms/default/cards/has-many",
+                "type": "cards"
+              }
+            },
+            "foreignType": {
+              "data": {
+                "id": "http://localhost:3000/api/realms/default/cards/master-recording",
+                "type": "cards"
+              }
+            }
+          }
+        },
         "copyright": {
           "attributes": {
             "csFieldArity": "singular",
@@ -263,7 +287,7 @@
       "verifi-id": "0x8a4532b7c27d6ca5d8bd3201fa7c28071221165dc2f1b4528c22e2809d89ab18",
       "version-type": "Original Work"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/musical-work",
+    "id": "http://localhost:3000/api/realms/default/cards/musical-work",
     "meta": {
       "cardDir": "/Users/burcunoyan/fuga-v2-cards/cards/musical-work"
     },
@@ -276,7 +300,7 @@
       },
       "writers": {
         "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/writers",
+          "id": "http://localhost:3000/api/realms/default/cards/writers",
           "type": "cards"
         }
       }
