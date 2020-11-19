@@ -1,10 +1,6 @@
 {
   "data": {
     "attributes": {
-      "background-singer": "Jenny Sparks, Sophia Lanagan, Helen Gellar",
-      "catalog-no": "BRN-19230-1239049",
-      "copyright": "℗ 2020 Bunny Records",
-      "cover-art": "https://cardstack.github.io/boxel/media-registry/covers/medium/Autumn-Leaves-609809715b3077a40277ba64eb37d81a.jpg",
       "csCreated": "2020-08-03T15:38:30.625Z",
       "csFeatures": {
         "embedded-css": "embedded.css",
@@ -87,7 +83,7 @@
       "csFields": {
         "artist": {
           "attributes": {
-            "csFieldArity": "plural",
+            "csFieldArity": "singular",
             "csFields": {
               
             },
@@ -610,13 +606,25 @@
                 "id": "https://base.cardstack.com/public/cards/string-field",
                 "type": "cards"
               }
+            },
+            "musical-work": {
+              "data": {
+                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/musical-work-template",
+                "type": "cards"
+              }
             }
           }
         }
       },
       "csId": "master-recording-template",
       "csTitle": "Master Recording Template",
-      "csUpdated": "2020-10-13T17:14:32.589Z"
+      "csUpdated": "2020-10-13T17:14:32.589Z",
+      "section-heading": "Master Details",
+      "section-heading-2": "Musical Work",
+      "section-heading-3": "Registrations",
+      "section-heading-4": "Files",
+      "section-heading-5": "Codes",
+      "section-heading-6": "Credits"
     },
     "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording-template",
     "meta": {

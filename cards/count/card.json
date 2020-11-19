@@ -1,8 +1,8 @@
 {
   "data": {
     "attributes": {
-      "csId": "count-data",
-      "csTitle": "Count Data",
+      "csId": "count",
+      "csTitle": "Count",
       "csFieldSets": {
         "embedded": [
         ],
@@ -20,7 +20,7 @@
               "compute": "compute.js"
             },
             "csFiles": {
-              "compute.js": "export default async function() { return { value: 1+ 1 }; }"
+              "compute.js": "export default async function() { return { value: 1 + 1 }; }"
             }
           },
           "relationships": {
@@ -55,7 +55,7 @@
         }
       }
     },
-    "id": "http://localhost:3000/api/realms/default/cards/count-data",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/count",
     "relationships": {
     },
     "type": "cards"
