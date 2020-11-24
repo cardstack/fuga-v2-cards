@@ -1,7 +1,6 @@
 {
   "data": {
     "attributes": {
-      "csCreated": "2020-09-18T16:28:08.752Z",
       "csFeatures": {
         "embedded-css": "embedded.css",
         "isolated-css": "isolated.css"
@@ -166,17 +165,12 @@
         }
       },
       "csId": "participant",
-      "csTitle": "Participant",
-      "csUpdated": "2020-09-24T21:31:13.049Z",
-      "email": "N/A",
-      "img-url": "https://cardstack.github.io/boxel/media-registry/placeholders/profile-4b36b82cc8d2cee21c28a022c9988a75.svg",
-      "ipi": "N/A",
-      "pro": "N/A",
-      "role": "Description",
-      "title": "Name",
-      "website": "N/A"
+      "csTitle": "Participant Template"
     },
     "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
+    "meta": {
+      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/participant"
+    },
     "relationships": {
       "csAdoptsFrom": {
         "data": {

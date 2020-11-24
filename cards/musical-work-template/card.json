@@ -1,0 +1,295 @@
+{
+  "data": {
+    "attributes": {
+      "csCreated": "2020-08-03T15:38:30.625Z",
+      "csFeatures": {
+        "embedded-css": "embedded.css",
+        "isolated-css": "isolated.css"
+      },
+      "csFieldOrder": [
+        "header-title",
+        "header-description",
+        "header-image",
+        "title",
+        "writers",
+        "iswc",
+        "verifi-id",
+        "version-type",
+        "publishers",
+        "copyright"
+      ],
+      "csFieldSets": {
+        "embedded": [
+          "iswc",
+          "header-image",
+          "header-title",
+          "header-description",
+          "truncated-verifi-id"
+        ],
+        "isolated": [
+          "iswc",
+          "title",
+          "copyright",
+          "verifi-id",
+          "publishers",
+          "header-image",
+          "header-title",
+          "version-type",
+          "header-description",
+          "writers",
+          "related-recordings"
+        ]
+      },
+      "csFields": {
+        "related-recordings": {
+          "attributes": {
+            "csFieldArity": "plural",
+            "csFields": {
+            },
+            "csId": "related-recordings",
+            "csTitle": "Related Recordings",
+            "foreignKey": "musical-work"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/has-many",
+                "type": "cards"
+              }
+            },
+            "foreignType": {
+              "data": {
+                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording-template",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "copyright": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Copyright Notice"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "header-description": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Header Description"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "header-image": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Header Image URL"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/image-reference-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "header-title": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Header Title"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "iswc": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "ISWC"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "ownership-splits": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Ownership Splits"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "publishers": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Publishers"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "source": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Source"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "title": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Title"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "truncated-verifi-id": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Verifi Id"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "verifi-id": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Verifi ID"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "version-type": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Version Type"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "writers": {
+          "attributes": {
+            "csFieldArity": "plural",
+            "csFields": {
+            },
+            "csTitle": "Writers"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/base",
+                "type": "cards"
+              }
+            }
+          }
+        }
+      },
+      "csId": "musical-work-template",
+      "csTitle": "Musical Work Template",
+      "csUpdated": "2020-10-06T21:24:28.081Z"
+    },
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/musical-work-template",
+    "meta": {
+      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/musical-work-template"
+    },
+    "relationships": {
+      "csAdoptsFrom": {
+        "data": {
+          "id": "https://base.cardstack.com/public/cards/base",
+          "type": "cards"
+        }
+      }
+    },
+    "type": "cards"
+  }
+}

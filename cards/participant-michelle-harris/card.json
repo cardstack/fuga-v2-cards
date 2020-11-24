@@ -1,0 +1,43 @@
+{
+  "data": {
+    "attributes": {
+      "csCreated": "2020-09-23T22:20:41.957Z",
+      "csFieldOrder": [
+        "title",
+        "img-url",
+        "role",
+        "ipi",
+        "pro",
+        "email",
+        "website",
+        "recordings"
+      ],
+      "csFields": {
+      },
+      "csId": "participant-michelle-harris",
+      "csTitle": "Participant",
+      "csUpdated": "2020-09-23T22:21:51.615Z",
+      "email": "michelle@musicbymichelle.com",
+      "img-url": "https://cardstack.github.io/boxel/media-registry/profiles/Michelle-Harris-1fed8a6084425ba1255c8259a8345a53.jpg",
+      "ipi": "00618722178",
+      "pro": "SOMOA",
+      "recordings": "353",
+      "role": "Producer (Music by Michelle)",
+      "title": "Michelle Harris",
+      "website": "www.musicbymichelle.com"
+    },
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant-michelle-harris",
+    "meta": {
+      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/participant-michelle-harris"
+    },
+    "relationships": {
+      "csAdoptsFrom": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
+          "type": "cards"
+        }
+      }
+    },
+    "type": "cards"
+  }
+}

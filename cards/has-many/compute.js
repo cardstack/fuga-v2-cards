@@ -1,11 +1,11 @@
 // eslint-disable-next-line
-module.exports = async function({ field, card }) {
+export default async function({ field, card }) {
   let foreignKey = await field.value('foreignKey');
   let foreignType = await field.value('foreignType');
   try {
     let found = await card.reader.search({
       filter: {
-        type: foreignType,
+        type: { csRealm: foreignType.csRealm, csId: foreignType.csId },
         eq: {
          [foreignKey + '.csId']:  card.csId,
          [foreignKey + '.csRealm']:  card.csRealm,

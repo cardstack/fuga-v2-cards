@@ -1,10 +1,6 @@
 {
   "data": {
     "attributes": {
-      "background-singer": "Jenny Sparks, Sophia Lanagan, Helen Gellar",
-      "catalog-no": "BRN-19230-1239049",
-      "copyright": "℗ 2020 Bunny Records",
-      "cover-art": "https://cardstack.github.io/boxel/media-registry/covers/medium/Autumn-Leaves-609809715b3077a40277ba64eb37d81a.jpg",
       "csCreated": "2020-08-03T15:38:30.625Z",
       "csFeatures": {
         "embedded-css": "embedded.css",
@@ -66,7 +62,6 @@
           "duration",
           "language",
           "producer",
-          "writers",
           "copyright",
           "cover-art",
           "verifi-id",
@@ -92,7 +87,7 @@
               
             },
             "csId": "artist",
-            "csTitle": "Artist"
+            "csTitle": "Main Artist"
           },
           "relationships": {
             "csAdoptsFrom": {
@@ -105,7 +100,7 @@
         },
         "background-singer": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
               
             },
@@ -394,7 +389,7 @@
         },
         "mastering-engineer": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
               
             },
@@ -411,7 +406,7 @@
         },
         "mixing-engineer": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
               
             },
@@ -478,22 +473,6 @@
             }
           }
         },
-        "writers": {
-          "attributes": {
-            "csFieldArity": "plural",
-            "csFields": {
-            },
-            "csTitle": "Writers"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/base",
-                "type": "cards"
-              }
-            }
-          }
-        },
         "recording-date": {
           "attributes": {
             "csFieldArity": "singular",
@@ -513,7 +492,7 @@
         },
         "recording-engineer": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
               
             },
@@ -616,7 +595,13 @@
       },
       "csId": "master-recording-template",
       "csTitle": "Master Recording Template",
-      "csUpdated": "2020-10-13T17:14:32.589Z"
+      "csUpdated": "2020-10-13T17:14:32.589Z",
+      "section-heading": "Master Details",
+      "section-heading-2": "Musical Work",
+      "section-heading-3": "Registrations",
+      "section-heading-4": "Files",
+      "section-heading-5": "Codes",
+      "section-heading-6": "Credits"
     },
     "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording-template",
     "meta": {

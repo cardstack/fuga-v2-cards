@@ -29,7 +29,7 @@
       "verifi-id": "0x9b2138a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74ca26",
       "artist": [
         {
-          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/pia-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant-pia-midina",
           "attributes": {
             "csId": "pia-midina",
             "csTitle": "Participant",
@@ -53,7 +53,7 @@
           "type": "cards"
         },
         {
-          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/francesco-midina",
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant-francesco-midina",
           "attributes": {
             "csId": "francesco-midina",
             "csTitle": "Participant",
@@ -223,7 +223,7 @@
             },
             "writer": {
               "data": {
-                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/pia-midina",
+                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant-pia-midina",
                 "type": "cards"
               }
             }
@@ -243,20 +243,14 @@
           "type": "cards"
         }
       },
-      "musical-work": {
-        "data": {
-          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/musical-work",
-          "type": "cards"
-        }
-      },
       "producer": {
         "data": [
           {
-            "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/francesco-midina",
+            "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant-francesco-midina",
             "type": "cards"
           },
           {
-            "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/miles-ponia",
+            "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant-miles-ponia",
             "type": "cards"
           }
         ]
