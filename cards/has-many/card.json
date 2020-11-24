@@ -10,15 +10,45 @@
         "isolated": [
         ]
       },
-      "csFields": {},
+      "csFields": {
+        "foreignKey": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Foreign Key"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/string-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "foreignType": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Foreign Type"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/base",
+                "type": "cards"
+              }
+            }
+          }
+        }
+      },
       "csId": "has-many",
       "csTitle": "Has Many",
       "csUpdated": "2020-08-03T15:38:43.282Z",
       "csFeatures": {
         "compute": "compute.js"
-      },
-      "csFiles": {
-        "compute.js": "module.exports = async function({ field, card }) {\n  let foreignKey = await field.value('foreignKey');\n  let foreignType = await field.value('foreignType');\n  try {\n    let found = await card.reader.search({\n      filter: {\n        type: foreignType,\n        eq: {\n         [foreignKey + '.csId']:  card.csId,\n         [foreignKey + '.csRealm']:  card.csRealm,\n         [foreignKey + '.csOriginalRealm']:  card.csOriginalRealm\n        },\n      },\n    });\n    return { value: found.cards };\n  } catch (err) {\n    return { value: [] };\n  }\n}\n"
       }
     },
     "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/has-many",
@@ -33,36 +63,5 @@
       }
     },
     "type": "cards"
-  },
-  "included": [
-    {
-      "attributes": {
-        "csCreated": "2020-08-03T15:38:43.316Z",
-        "csDescription": "This represents cards of any type",
-        "csFeatures": {
-          "embedded-css": "embedded.css",
-          "isolated-css": "isolated.css"
-        },
-        "csFiles": {
-          "card.json": "{\n  \"data\": {\n    \"type\": \"cards\",\n    \"attributes\": {\n      \"csId\": \"base\",\n      \"csTitle\": \"Base Card\",\n      \"csDescription\": \"This represents cards of any type\",\n      \"csFeatures\": {\n        \"isolated-css\": \"isolated.css\",\n        \"embedded-css\": \"embedded.css\"\n      }\n    },\n    \"relationships\": {\n    }\n  }\n}",
-          "embedded.css": "/* This is the embedded base card template. All cards will inherit this CSS if\nno custom CSS is provided for the card.*/\n\n.card-boundary {\n  width: 225px;\n  height: 225px;\n  margin: 0;\n  border-radius: 10px;\n  background-color: white;\n  color: black;\n  font: 400 10px/1.2 'Open Sans';\n  letter-spacing: 0.03em;\n  text-align: left;\n  overflow: hidden;\n  overflow-wrap: break-word;\n  word-break: break-word;\n}\n\n.embedded-card--view-fields {\n  display: grid; /* Helpful for ordering fields */\n}\n.embedded-card--view-fields::before,\n.embedded-card--view-fields::after {\n  height: 0; /* for firefox */\n}\n\n.field {\n  display: grid;\n  grid-template-columns: 1fr 1.5fr;\n  grid-gap: 0 10px;\n  width: 100%;\n  margin: 0 auto;\n  padding: 0 15px 15px;\n}\n.field.field-type-belongs-to-view-field,\n.field:first-of-type {\n  padding-top: 15px;\n}\n\n.label {\n  padding-bottom: 4px;\n  color: var(--black);\n  font-size: 7px;\n  font-weight: bold;\n  letter-spacing: 0.1em;\n  line-height: 1.364;\n  text-transform: uppercase;\n}\n\n\n/**** SPECIAL FIELD TYPES ****/\n\n/* field-type: link */\n/* use `label` for link text and `value` for link url */\n.link-viewer {\n  color: var(--cobalt-blue);\n  text-decoration: underline;\n  font-weight: 600;\n}\n\n/* field-type: cta */\n/* use `label` for button text and `value` for button link url */\n.cta-viewer {\n  min-height: 1em;\n  border-radius: 6px;\n  font-size: 10px;\n  font-weight: 700;\n  line-height: calc(22 / 15);\n  letter-spacing: 0.03em;\n  padding: 6px;\n}\n\n/* field-type: decorative-image */\n.decorative-image-viewer {\n  max-height: 50px;\n}\n\n\n/**** SPECIAL FIELD IDs ****/\n\n/* field-id: background-image */\n.background-image-field {\n  display: block;\n  max-width: 100%;\n  padding: 0;\n  order: -100; /* first item on page */\n}\n.background-image-field > .label {\n  display: none;\n}\n.background-image-field > .value {\n  width: 100%;\n  max-height: 75px;\n  object-fit: cover;\n  object-position: center;\n}\n\n/* field-id: title */\n.title-field {\n  display: block;\n  padding-bottom: 7px;\n}\n.title-field > .label {\n  display: none;\n}\n.title-field > .value {\n  color: var(--dark-gray);\n  font-size: 14px;\n  font-weight: bold;\n  letter-spacing: 0.015em;\n  line-height: 1.2;\n}\n\n/* field-id: highlight-title */\n.highlight-title-field {\n  display: block;\n}\n.highlight-title-field > .label {\n  display: none;\n}\n.highlight-title-field > .value {\n  color: var(--red);\n  font-size: 10px;\n  font-weight: bold;\n  letter-spacing: 0.035em;\n  text-transform: capitalize;\n}\n\n/* field-id: divider */\n.divider-field {\n  display: block;\n  width: calc(100% - 30px);\n  border-top: 1px solid var(--light-gray);\n}\n.divider-field > .label,\n.divider-field > .value {\n  display: none;\n}\n\n/* field-id: description */\n.description-field {\n  display: block;\n}\n",
-          "isolated.css": "/* This is the isolated base card template. All cards will inherit this CSS if\nno custom CSS is provided for the card.*/\n\n.card-boundary {\n  width: 100%;\n  margin: 0 auto;\n  background-color: white;\n  color: black;\n  font: 400 15px/1.467 'Open Sans';\n  letter-spacing: 0.03em;\n  text-align: left;\n  overflow: hidden;\n  overflow-wrap: break-word;\n  word-break: break-word;\n}\n\n.isolated-card--view-fields {\n  display: grid; /* Helpful for ordering fields */\n}\n.isolated-card--view-fields::before,\n.isolated-card--view-fields::after {\n  height: 0; /* for firefox */\n}\n\n.field {\n  display: grid;\n  grid-template-columns: 1fr 1.5fr;\n  grid-gap: 35px 50px;\n  max-width: 656px;\n  width: 100%;\n  margin: 0 auto;\n  padding: 0 30px 35px;\n}\n.field:first-of-type {\n  padding-top: 35px;\n}\n\n.label {\n  padding-bottom: 4px;\n  color: var(--black);\n  font-size: 11px;\n  font-weight: bold;\n  letter-spacing: 0.1em;\n  line-height: 1.364;\n  text-transform: uppercase;\n}\n\n\n/**** SPECIAL CORE TYPES ****/\n\n/* type: link */\n/* use `label` for link text and `value` for link url */\n.link-viewer {\n  color: var(--cobalt-blue);\n  text-decoration: underline;\n  font-weight: 600;\n}\n\n/* type: cta */\n/* use `label` for button text and `value` for button link url */\n.cta-viewer {\n  min-height: 45px;\n  border-radius: 6px;\n  font-size: 15px;\n  font-weight: 700;\n  line-height: calc(22 / 15);\n  letter-spacing: 0.03em;\n  padding-top: 11px;\n  padding-bottom: 11px;\n}\n\n/* type: decorative-image */\n.decorative-image-viewer {\n  max-width: 100%;\n}\n\n\n/**** SPECIAL FIELD IDs ****/\n\n/* field-id: background-image */\n.background-image-field {\n  display: block;\n  max-width: 100%;\n  padding: 0;\n  order: -100; /* first item on page */\n}\n.background-image-field > .label {\n  display: none;\n}\n.background-image-field > .value {\n  width: 100%;\n  max-height: 300px;\n  object-fit: cover;\n  object-position: center;\n}\n\n/* field-id: title */\n.title-field {\n  display: block;\n}\n.title-field > .label {\n  display: none;\n}\n.title-field > .value {\n  color: var(--dark-gray);\n  font-size: 25px;\n  font-weight: bold;\n  letter-spacing: 0.015em;\n  line-height: 1.2;\n}\n\n/* field-id: highlight-title */\n.highlight-title-field {\n  display: block;\n}\n.highlight-title-field > .label {\n  display: none;\n}\n.highlight-title-field > .value {\n  color: var(--red);\n  font-size: 18px;\n  font-weight: bold;\n  letter-spacing: 0.035em;\n  text-transform: capitalize;\n}\n\n/* field-id: divider */\n.divider-field {\n  display: block;\n  width: calc(100% - 60px);\n  max-width: 596px; /* max-field-width - padding * 2 */\n  border-top: 1px solid var(--light-gray);\n}\n.divider-field .label,\n.divider-field .value {\n  display: none;\n}\n\n/* field-id: description */\n.description-field {\n  display: block;\n}\n",
-          "package.json": "{\n  \"name\": \"@cardstack/base-card\",\n  \"version\": \"0.18.17\",\n  \"license\": \"MIT\",\n  \"publishConfig\": {\n    \"access\": \"public\"\n  },\n  \"peerDependencies\": {\n    \"@cardstack/hub\": \"*\"\n  },\n  \"devDependencies\": {\n    \"@cardstack/hub\": \"0.18.17\"\n  },\n  \"volta\": {\n    \"node\": \"12.13.1\",\n    \"yarn\": \"1.22.0\"\n  }\n}\n"
-        },
-        "csId": "base",
-        "csPeerDependencies": {
-          "@cardstack/hub": "*"
-        },
-        "csTitle": "Base Card",
-        "csUpdated": "2020-08-03T15:38:43.316Z"
-      },
-      "id": "https://base.cardstack.com/public/cards/base",
-      "meta": {
-        "cardDir": "/Users/alex/cardstack/fuga-v2/node_modules/@cardstack/base-card"
-      },
-      "relationships": {
-      },
-      "type": "cards"
-    }
-  ]
+  }
 }
