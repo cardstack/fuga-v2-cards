@@ -89,9 +89,19 @@
   margin: auto;
 }
 
-.title-field {
+.isolated-card--view-fields > .title-field {
   border-top: 1px solid #dedede;
   padding-top: 35px;
+}
+
+.isolated-card--view-fields > .verifi-id-field {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.isolated-card--view-fields > .related-recordings-field {
+  display: none;
 }
 
 .isolated-card--small {
@@ -119,12 +129,4 @@
 
 .isolated-card--small .label {
   text-align: left;
-}
-
-
-/* Field name-specific styles */
-.isolated-card--view-fields > .verifi-id-field {
-  overflow-wrap: anywhere;
-  word-break: break-all;
-  word-wrap: break-word;
 }

@@ -259,7 +259,7 @@
         },
         "writers": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
             },
             "csTitle": "Writers"
