@@ -261,7 +261,23 @@
           "attributes": {
             "csFieldArity": "plural",
             "csFields": {
+              "key": {
+                "attributes": {
+                  "csFieldArity": "singular",
+                  "csFields": {
+                  }
+                },
+                "relationships": {
+                  "csAdoptsFrom": {
+                    "data": {
+                      "id": "https://base.cardstack.com/public/cards/string-field",
+                      "type": "cards"
+                    }
+                  }
+                }
+              }
             },
+            "key": "participant",
             "csTitle": "Writers"
           },
           "relationships": {

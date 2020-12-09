@@ -84,8 +84,23 @@
           "attributes": {
             "csFieldArity": "plural",
             "csFields": {
-              
+              "key": {
+                "attributes": {
+                  "csFieldArity": "singular",
+                  "csFields": {
+                  }
+                },
+                "relationships": {
+                  "csAdoptsFrom": {
+                    "data": {
+                      "id": "https://base.cardstack.com/public/cards/string-field",
+                      "type": "cards"
+                    }
+                  }
+                }
+              }
             },
+            "key": "participant",
             "csId": "artist",
             "csTitle": "Main Artist"
           },
@@ -425,8 +440,23 @@
           "attributes": {
             "csFieldArity": "singular",
             "csFields": {
-              
+              "key": {
+                "attributes": {
+                  "csFieldArity": "singular",
+                  "csFields": {
+                  }
+                },
+                "relationships": {
+                  "csAdoptsFrom": {
+                    "data": {
+                      "id": "https://base.cardstack.com/public/cards/string-field",
+                      "type": "cards"
+                    }
+                  }
+                }
+              }
             },
+            "key": "musical-work-template",
             "csId": "musical-work",
             "csTitle": "Musical Work"
           },
@@ -460,8 +490,23 @@
           "attributes": {
             "csFieldArity": "plural",
             "csFields": {
-
+              "key": {
+                "attributes": {
+                  "csFieldArity": "singular",
+                  "csFields": {
+                  }
+                },
+                "relationships": {
+                  "csAdoptsFrom": {
+                    "data": {
+                      "id": "https://base.cardstack.com/public/cards/string-field",
+                      "type": "cards"
+                    }
+                  }
+                }
+              }
             },
+            "key": "participant",
             "csTitle": "Producer"
           },
           "relationships": {
