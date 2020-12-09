@@ -22,7 +22,7 @@
         "embedded": [
           "iswc",
           "header-image",
-          "header-title",
+          "title",
           "header-description",
           "truncated-verifi-id"
         ],

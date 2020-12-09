@@ -44,20 +44,20 @@
   padding-top: 3px;
 }
 
-.header-title-label,
+.title-label,
 .header-image-label,
 .header-description-label {
   display: none;
 }
 
-.header-title-field,
+.title-field,
 .header-image-field,
 .header-description-field {
   order: -1;
   margin: 0;
 }
 
-.header-title-field {
+.title-field {
   grid-column: 2 / -1;
   grid-row: 1;
   align-self: end;
