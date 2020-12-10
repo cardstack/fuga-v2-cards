@@ -63,8 +63,7 @@
       "release-date": "2020-03-02",
       "sub-heading": "Pia Midina",
       "title": "The Leaves Are Changing Color",
-      "truncated-verifi-id": "0x9b21...ca26",
-      "verifi-id": "0x9b2138a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74ca26"
+      "truncated-verifi-id": "0x9b21...ca26"
     },
     "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/recording-the-leaves-are-changing-color",
     "meta": {
@@ -98,6 +97,12 @@
             "type": "cards"
           }
         ]
+      },
+      "verifi-id": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/registration-the-leaves-are-changing-color",
+          "type": "cards"
+        }
       }
     },
     "type": "cards"

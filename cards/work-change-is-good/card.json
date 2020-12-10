@@ -27,7 +27,6 @@
       "publishers": "RealTunes Publishing",
       "title": "Change Is Good",
       "truncated-verifi-id": "0x2ef3...45ca",
-      "verifi-id": "0x2ef332b7c27d6ca5d8bd3201fa7c28071221165dc2f1b4528c22e2809d8945ca",
       "version-type": "Original work",
       "writers": [
         {
@@ -88,6 +87,12 @@
       "csAdoptsFrom": {
         "data": {
           "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/musical-work-template",
+          "type": "cards"
+        }
+      },
+      "verifi-id": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/registration-work-change-is-good",
           "type": "cards"
         }
       }

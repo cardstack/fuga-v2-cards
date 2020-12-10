@@ -1,0 +1,93 @@
+.embedded-card {
+  width: 100%;
+  max-width: 450px;
+  min-height: 90px;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: calc(18/13);
+  letter-spacing: 0.015em;
+}
+
+.embedded-card--view-fields {
+  display: grid;
+  grid-template-columns: 50px auto auto auto;
+  justify-items: start;
+  gap: 0 15px;
+  padding: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.field {
+  grid-template-columns: auto;
+  grid-row: 3;
+  grid-column: span 2;
+  gap: 0;
+  margin: 25px 0 0;
+  padding: 0;
+}
+
+.label {
+  color: #6b6a80;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: calc(15/11);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.value {
+  padding-top: 3px;
+}
+
+.title-label,
+.logoUrl-label,
+.verifiId-label {
+  display: none;
+}
+
+.title-field,
+.logoUrl-field,
+.verifiId-field {
+  order: -1;
+  margin: 0;
+}
+
+.title-field {
+  grid-column: 2 / -1;
+  grid-row: 1;
+  align-self: end;
+
+  font-size: 16px;
+  line-height: calc(22/16);
+  font-weight: 700;
+}
+
+.logoUrl-field {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+.verifiId-field {
+  grid-column: 2 / -1;
+  grid-row: 2;
+
+  color: #6b6a80;
+  letter-spacing: 0.025em;
+
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: initial;
+}
+
+.logoUrl-field img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 100px;
+}

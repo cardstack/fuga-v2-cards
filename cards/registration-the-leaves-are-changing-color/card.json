@@ -1,0 +1,39 @@
+{
+  "data": {
+    "attributes": {
+      "csFieldOrder": [
+        "title",
+        "logoUrl",
+        "description",
+        "assetTitle",
+        "assetType",
+        "verifiId",
+        "createdDate"
+      ],
+      "csFields": {
+      },
+      "csId": "registration-the-leaves-are-changing-color",
+      "csTitle": "Registration",
+      "title": "Verifi Registry",
+      "verifiId": "0x9b2138a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74ca26",
+      "assetType": "Master Recording",
+      "logoUrl": "/assets/images/media-registry/verifi-logo.svg",
+      "description": "The Leaves Are Changing Color",
+      "assetTitle":"The Leaves Are Changing Color",
+      "createdDate": "2020/02/17"
+    },
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/registration-the-leaves-are-changing-color",
+    "meta": {
+      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/registration-the-leaves-are-changing-color"
+    },
+    "relationships": {
+      "csAdoptsFrom": {
+        "data": {
+          "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/registration",
+          "type": "cards"
+        }
+      }
+    },
+    "type": "cards"
+  }
+}
