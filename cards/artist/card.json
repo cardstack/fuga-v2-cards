@@ -2,8 +2,7 @@
   "data": {
     "attributes": {
       "csFeatures": {
-        "embedded-css": "embedded.css",
-        "isolated-css": "isolated.css"
+        "embedded-css": "embedded.css"
       },
       "csFieldOrder": [
         "title",
@@ -12,27 +11,19 @@
         "ipi",
         "pro",
         "email",
-        "website",
-        "recordings"
+        "website"
       ],
       "csFieldSets": {
         "embedded": [
           "email",
           "title",
           "img-url",
-          "website",
-          "role",
-          "recordings"
-        ],
-        "isolated": [
           "ipi",
           "pro",
-          "role",
-          "email",
-          "title",
-          "img-url",
           "website",
-          "recordings"
+          "role"
+        ],
+        "isolated": [
         ]
       },
       "csFields": {
@@ -100,22 +91,6 @@
             }
           }
         },
-        "recordings": {
-          "attributes": {
-            "csFieldArity": "singular",
-            "csFields": {
-            },
-            "csTitle": "No. of Recordings"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://base.cardstack.com/public/cards/string-field",
-                "type": "cards"
-              }
-            }
-          }
-        },
         "role": {
           "attributes": {
             "csFieldArity": "singular",
@@ -165,12 +140,12 @@
           }
         }
       },
-      "csId": "participant",
-      "csTitle": "Participant Template"
+      "csId": "artist",
+      "csTitle": "Artist Template"
     },
-    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/participant",
+    "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/artist",
     "meta": {
-      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/participant"
+      "cardDir": "/Users/burcunoyan/music-data/fuga-v2-cards/cards/artist"
     },
     "relationships": {
       "csAdoptsFrom": {
