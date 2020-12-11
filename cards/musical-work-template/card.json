@@ -107,7 +107,7 @@
           "relationships": {
             "csAdoptsFrom": {
               "data": {
-                "id": "https://base.cardstack.com/public/cards/image-reference-field",
+                "id": "https://base.cardstack.com/public/cards/relative-image-reference-field",
                 "type": "cards"
               }
             }
