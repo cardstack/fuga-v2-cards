@@ -45,12 +45,12 @@
       "csTitle": "Master Recording",
       "csUpdated": "2020-10-06T21:56:14.251Z",
       "duration": "3:40",
-      "genre": "Alternative",
+      "genre": ["Alternative"],
       "header-image": "https://cardstack.github.io/boxel/media-registry/covers/medium/Graduation-Day-1a9ff0255356702b43462820c86ce6f1.jpg",
       "heading": "Three Wishes",
-      "isrc": "US-S1Z-22-05004",
-      "label": "Bunny Records",
-      "language": "English (en_US)",
+      "isrc": ["US-S1Z-22-05004"],
+      "label": ["Bunny Records"],
+      "language": ["English (en_US)"],
       "mastering-engineer": ["Joel Kaplan"],
       "mixing-engineer": ["Mariah Solis"],
       "parental-advisory": false,
@@ -65,8 +65,7 @@
       "section-heading-6": "Credits",
       "sub-heading": "Pia Midina",
       "title": "Three Wishes",
-      "truncated-verifi-id": "0x150b...390a",
-      "verifi-id": "0x150b38a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74390a"
+      "truncated-verifi-id": "0x150b...390a"
     },
     "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/recording-three-wishes",
     "meta": {

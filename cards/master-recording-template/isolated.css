@@ -163,6 +163,15 @@
   word-wrap: break-word;
 }
 
+.isolated-card--view-fields > .cover-art-field > .cover-art-placeholder-value {
+  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/album_art-d1fcf1d7166e3a6a73cc4651ad0f6267.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 260px;
+  height: 260px;
+}
+
 
 /* Section field styles */
 .isolated-card--view-fields > .section-heading-field > .section-heading-label,

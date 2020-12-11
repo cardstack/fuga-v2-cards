@@ -45,12 +45,12 @@
       "csTitle": "Master Recording",
       "csUpdated": "2020-10-06T21:56:14.251Z",
       "duration": "3:17",
-      "genre": "Pop",
+      "genre": ["Pop"],
       "header-image": "https://cardstack.github.io/boxel/media-registry/covers/medium/Love-Never-Dies-87008c2454b21301fb45085ad8e89d13.jpg",
       "heading": "Keep Hope Alive",
-      "isrc": "US-S1Z-22-04996",
-      "label": "Bunny Records",
-      "language": "English (en_US)",
+      "isrc": ["US-S1Z-22-04996"],
+      "label": ["Bunny Records"],
+      "language": ["English (en_US)"],
       "mastering-engineer": ["Joel Kaplan"],
       "mixing-engineer": ["Mariah Solis"],
       "parental-advisory": false,
@@ -65,8 +65,7 @@
       "section-heading-6": "Credits",
       "sub-heading": "Pia Midina",
       "title": "Keep hope alive",
-      "truncated-verifi-id": "0x12ef...a56d",
-      "verifi-id": "0x12ef38a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74a56d"
+      "truncated-verifi-id": "0x12ef...a56d"
     },
     "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/recording-keep-hope-alive",
     "meta": {

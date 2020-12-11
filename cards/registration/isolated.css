@@ -93,6 +93,14 @@ no custom CSS is provided for the card.*/
   border-radius: 100px;
 }
 
+.logoUrl-placeholder-value {
+  background: url('/assets/images/media-registry/verifi-logo.svg') center/contain no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 100px;
+}
+
 .description-field + .field {
   border-top: 1px solid #dedede;
   padding-top: 35px;

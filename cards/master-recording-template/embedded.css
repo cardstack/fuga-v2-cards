@@ -48,6 +48,15 @@ no custom CSS is provided for the card.*/
   object-fit: cover;
 }
 
+.header-image-placeholder-value {
+  background-image: url('https://cardstack.github.io/boxel/media-registry/placeholders/album_art-d1fcf1d7166e3a6a73cc4651ad0f6267.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 182px;
+  height: 182px;
+}
+
 .heading-field {
   grid-area: title;
 }
@@ -65,4 +74,8 @@ no custom CSS is provided for the card.*/
   color: #6B6A80;
   font-size: 13px;
   line-height: calc(18/13);
+}
+
+.sub-heading-placeholder-value {
+  display: none;
 }

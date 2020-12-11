@@ -127,7 +127,7 @@
           "relationships": {
             "csAdoptsFrom": {
               "data": {
-                "id": "https://base.cardstack.com/public/cards/number-field",
+                "id": "https://base.cardstack.com/public/cards/integer-field",
                 "type": "cards"
               }
             }
