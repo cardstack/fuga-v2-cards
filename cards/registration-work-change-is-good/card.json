@@ -8,7 +8,9 @@
         "assetTitle",
         "assetType",
         "verifiId",
-        "createdDate"
+        "createdDate",
+        "updatedDate",
+        "versions"
       ],
       "csFields": {
       },
@@ -18,7 +20,7 @@
       "verifiId": "0x2ef332b7c27d6ca5d8bd3201fa7c28071221165dc2f1b4528c22e2809d8945ca",
       "assetType": "Original Work",
       "logoUrl": "/assets/images/media-registry/verifi-logo.svg",
-      "description": "Change Is Good",
+      "description": "0x2ef3...45ca",
       "assetTitle":"Change Is Good"
     },
     "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/registration-work-change-is-good",

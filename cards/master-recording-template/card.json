@@ -199,7 +199,7 @@
         },
         "genre": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
               
             },
@@ -250,7 +250,7 @@
         },
         "isrc": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
               
             },
@@ -267,7 +267,7 @@
         },
         "label": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
               
             },
@@ -284,7 +284,7 @@
         },
         "language": {
           "attributes": {
-            "csFieldArity": "singular",
+            "csFieldArity": "plural",
             "csFields": {
               
             },

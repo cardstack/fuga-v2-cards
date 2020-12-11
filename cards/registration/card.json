@@ -12,7 +12,9 @@
         "assetTitle",
         "verifiId",
         "assetType",
-        "createdDate"
+        "createdDate",
+        "updatedDate",
+        "versions"
       ],
       "csFieldSets": {
         "embedded": [
@@ -25,6 +27,8 @@
         "isolated": [
           "assetType",
           "createdDate",
+          "updatedDate",
+          "versions",
           "title",
           "logoUrl",
           "verifiId",
@@ -92,6 +96,38 @@
             "csAdoptsFrom": {
               "data": {
                 "id": "https://base.cardstack.com/public/cards/date-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "updatedDate": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Updated Date"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/date-field",
+                "type": "cards"
+              }
+            }
+          }
+        },
+        "versions": {
+          "attributes": {
+            "csFieldArity": "singular",
+            "csFields": {
+            },
+            "csTitle": "Versions"
+          },
+          "relationships": {
+            "csAdoptsFrom": {
+              "data": {
+                "id": "https://base.cardstack.com/public/cards/number-field",
                 "type": "cards"
               }
             }

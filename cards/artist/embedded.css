@@ -26,6 +26,8 @@
   grid-row: 3;
   grid-column: span 2;
   gap: 0;
+  max-width: 100%;
+  overflow: hidden;
   margin: 25px 0 0;
   padding: 0;
 }

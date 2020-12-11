@@ -4,6 +4,8 @@
       "assetTitle": "The Leaves Are Changing Color",
       "assetType": "Master Recording",
       "createdDate": "2020-02-17",
+      "updatedDate": "2020-07-13",
+      "versions": 17,
       "csCreated": "2020-12-11T00:09:46.326Z",
       "csFieldOrder": [
         "title",
@@ -12,14 +14,16 @@
         "assetTitle",
         "assetType",
         "verifiId",
-        "createdDate"
+        "createdDate",
+        "updatedDate",
+        "versions"
       ],
       "csFields": {
       },
       "csId": "registration-the-leaves-are-changing-color",
       "csTitle": "Registration",
       "csUpdated": "2020-12-11T00:11:29.105Z",
-      "description": "The Leaves Are Changing Color",
+      "description": "0x9b21...ca26",
       "logoUrl": "/assets/images/media-registry/verifi-logo.svg",
       "title": "Verifi Registry",
       "verifiId": "0x9b2138a6c17e6da2d9cd3303fe7b26079231184ac2f1b6537a11e2301b74ca26"
