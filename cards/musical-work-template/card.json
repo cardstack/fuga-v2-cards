@@ -36,35 +36,10 @@
           "header-title",
           "version-type",
           "header-description",
-          "writers",
-          "related-recordings"
+          "writers"
         ]
       },
       "csFields": {
-        "related-recordings": {
-          "attributes": {
-            "csFieldArity": "plural",
-            "csFields": {
-            },
-            "csId": "related-recordings",
-            "csTitle": "Related Recordings",
-            "foreignKey": "musical-work"
-          },
-          "relationships": {
-            "csAdoptsFrom": {
-              "data": {
-                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/has-many",
-                "type": "cards"
-              }
-            },
-            "foreignType": {
-              "data": {
-                "id": "https://builder-hub.stack.cards/api/realms/bunny-records/cards/master-recording-template",
-                "type": "cards"
-              }
-            }
-          }
-        },
         "copyright": {
           "attributes": {
             "csFieldArity": "singular",
